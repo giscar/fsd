@@ -1,0 +1,6 @@
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Util/bin/Debug/PE.GOB.FSD.Util.dll
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Util/bin/Debug/PE.GOB.FSD.Util.pdb
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Util/obj/Debug/PE.GOB.FSD.Util.csprojAssemblyReference.cache
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Util/obj/Debug/PE.GOB.FSD.Util.csproj.CoreCompileInputs.cache
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Util/obj/Debug/PE.GOB.FSD.Util.dll
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Util/obj/Debug/PE.GOB.FSD.Util.pdb

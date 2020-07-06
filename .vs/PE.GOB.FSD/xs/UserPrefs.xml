@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{5992A5C6-F72E-4EF3-8BAE-A599DB5A6740}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PE.GOB.FSD.Web/pages/usuario.aspx.cs">
+    <Files>
+      <File FileName="PE.GOB.FSD.BusinessLogic/Common/MenuBusinessLogic.cs" Line="8" Column="21" />
+      <File FileName="PE.GOB.FSD.Web/comun/PaginaBase.cs" Line="6" Column="21" />
+      <File FileName="PE.GOB.FSD.Web/pages/seguridadPerfil.aspx.cs" Line="28" Column="35" />
+      <File FileName="PE.GOB.FSD.Web/pages/rol.aspx.cs" Line="24" Column="21" />
+      <File FileName="PE.GOB.FSD.Web/pages/usuario.aspx.cs" Line="37" Column="34" />
+      <File FileName="PE.GOB.FSD.DataAccess/Common/MenuDataAccess.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.DataAccess/Common/PerfilDataAccess.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.DataAccess/Common/PerfilRolDataAccess.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.DataAccess/Common/RolDataAccess.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.DataAccess/Core/EntidadDataAccess.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.DataAccess/Core/UsuarioDataAccess.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.BusinessLogic/Common/PerfilBusinessLogic.cs" Line="8" Column="21" />
+      <File FileName="PE.GOB.FSD.BusinessLogic/Common/PerfilRolBusinessLogic.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.BusinessLogic/Common/RolBusinessLogic.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.BusinessLogic/Core/EntidadBusinessLogic.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.BusinessLogic/Core/UsuarioBusinessLogic.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.Web/pages/plantilla.Master.cs" Line="22" Column="22" />
+      <File FileName="PE.GOB.FSD.Web/pages/plantilla.Master.designer.cs" Line="10" Column="21" />
+      <File FileName="PE.GOB.FSD.Util/Constante.cs" Line="3" Column="21" />
+      <File FileName="PE.GOB.FSD.Util/Log.cs" Line="1" Column="1" />
+      <File FileName="PE.GOB.FSD.Web/pages/login.aspx.cs" Line="22" Column="57" />
+      <File FileName="PE.GOB.FSD.Web/pages/login.aspx" Line="1" Column="94" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PE.GOB.FSD" expanded="True">
+            <Node name="PE.GOB.FSD.Web" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>SBS.UIF.CONTRALAFT.Entity/SBS.UIF.CONTRALAFT.Entity.csproj</String>
+    <String>SBS.UIF.CONTRALAFT.DataAccess/PE.GOB.FSD.DataAccess.csproj</String>
+    <String>SBS.UIF.CONTRALAFT.BusinessLogic/PE.GOB.FSD.BusinessLogic.csproj</String>
+    <String>SBS.UIF.CONTRALAFT.Util/PE.GOB.FSD.Util.csproj</String>
+    <String>SBS.UIF.CONTRALAFT.Web/PE.GOB.FSD.Web.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PE.GOB.FSD.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

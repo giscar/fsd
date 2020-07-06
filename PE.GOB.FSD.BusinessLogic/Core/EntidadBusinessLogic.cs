@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using PE.GOB.FSD.Entity.Core;
+using PE.GOB.FSD.DataAccess.Core;
+
+namespace PE.GOB.FSD.BusinessLogic.Core
+{
+    public class EntidadBusinessLogic
+    {
+        private readonly EntidadDataAccess _entidadDataAccess;
+
+        public EntidadBusinessLogic()
+        {
+            _entidadDataAccess = new EntidadDataAccess();
+        
+        }
+
+        public List<Entidad> listarPorEntidad()
+        {
+            return (_entidadDataAccess.listarPorEntidad());
+        }
+
+        public void guardarEntidad(Entidad _entidad)
+        {
+            _entidadDataAccess.guardarEntidad(_entidad);
+        }
+
+    }
+}

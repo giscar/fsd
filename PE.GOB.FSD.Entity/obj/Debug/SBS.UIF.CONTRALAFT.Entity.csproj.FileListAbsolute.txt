@@ -1,0 +1,12 @@
+/Users/carlosleon/requerimientos/2020/contralaft-privado/SBS.UIF.CONTRALAFT.Entity/bin/Debug/SBS.UIF.CONTRALAFT.Entity.xml
+/Users/carlosleon/requerimientos/2020/contralaft-privado/SBS.UIF.CONTRALAFT.Entity/bin/Debug/SBS.UIF.CONTRALAFT.Entity.dll
+/Users/carlosleon/requerimientos/2020/contralaft-privado/SBS.UIF.CONTRALAFT.Entity/bin/Debug/SBS.UIF.CONTRALAFT.Entity.pdb
+/Users/carlosleon/requerimientos/2020/contralaft-privado/SBS.UIF.CONTRALAFT.Entity/obj/Debug/SBS.UIF.CONTRALAFT.Entity.csproj.CoreCompileInputs.cache
+/Users/carlosleon/requerimientos/2020/contralaft-privado/SBS.UIF.CONTRALAFT.Entity/obj/Debug/SBS.UIF.CONTRALAFT.Entity.dll
+/Users/carlosleon/requerimientos/2020/contralaft-privado/SBS.UIF.CONTRALAFT.Entity/obj/Debug/SBS.UIF.CONTRALAFT.Entity.pdb
+/Users/carlosleon/requerimientos/2020/FSD/fsd/SBS.UIF.CONTRALAFT.Entity/bin/Debug/SBS.UIF.CONTRALAFT.Entity.xml
+/Users/carlosleon/requerimientos/2020/FSD/fsd/SBS.UIF.CONTRALAFT.Entity/bin/Debug/SBS.UIF.CONTRALAFT.Entity.dll
+/Users/carlosleon/requerimientos/2020/FSD/fsd/SBS.UIF.CONTRALAFT.Entity/bin/Debug/SBS.UIF.CONTRALAFT.Entity.pdb
+/Users/carlosleon/requerimientos/2020/FSD/fsd/SBS.UIF.CONTRALAFT.Entity/obj/Debug/SBS.UIF.CONTRALAFT.Entity.csproj.CoreCompileInputs.cache
+/Users/carlosleon/requerimientos/2020/FSD/fsd/SBS.UIF.CONTRALAFT.Entity/obj/Debug/SBS.UIF.CONTRALAFT.Entity.dll
+/Users/carlosleon/requerimientos/2020/FSD/fsd/SBS.UIF.CONTRALAFT.Entity/obj/Debug/SBS.UIF.CONTRALAFT.Entity.pdb

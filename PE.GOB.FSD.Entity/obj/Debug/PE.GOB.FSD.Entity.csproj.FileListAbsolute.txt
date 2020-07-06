@@ -1,0 +1,6 @@
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Entity/bin/Debug/PE.GOB.FSD.Entity.xml
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Entity/bin/Debug/PE.GOB.FSD.Entity.dll
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Entity/bin/Debug/PE.GOB.FSD.Entity.pdb
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Entity/obj/Debug/PE.GOB.FSD.Entity.csproj.CoreCompileInputs.cache
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Entity/obj/Debug/PE.GOB.FSD.Entity.dll
+/Users/carlosleon/requerimientos/2020/FSD/fsd/PE.GOB.FSD.Entity/obj/Debug/PE.GOB.FSD.Entity.pdb
