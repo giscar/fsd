@@ -7,7 +7,7 @@
     <ProjectGuid>{953DF26A-8370-49B6-890C-B2C757F96384}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SBS.UIF.CONTRALAFT.BusinessLogic</RootNamespace>
+    <RootNamespace>PE.GOB.FSD.BusinessLogic</RootNamespace>
     <AssemblyName>SBS.UIF.CONTRALAFT.BusinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -45,7 +45,7 @@ namespace PE.GOB.FSD.Web.pages
 
         private void cargarCombos()
         {
-            LlenarDropDownList(ddlCodigoEntidad, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), "0", Constante.MensajeComboRegistro);
+            //LlenarDropDownList(ddlCodigoEntidad, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), "0", Constante.MensajeComboRegistro);
             LlenarDropDownList(ddlCodigoPerfil, new PerfilBusinessLogic().listarPorPerfil().OrderBy(x => x.DesTipo), "0", Constante.MensajeComboRegistro); 
         }
 
