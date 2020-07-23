@@ -12,6 +12,7 @@ using PE.GOB.FSD.Entity.Core;
 using PE.GOB.FSD.Web.comun;
 using PE.GOB.FSD.Util;
 using System.Web.Security;
+using System.Diagnostics;
 
 namespace PE.GOB.FSD.Web.pages
 {
@@ -25,19 +26,27 @@ namespace PE.GOB.FSD.Web.pages
 
         List<Usuario> listadoUsuarios;
 
+        ParametroBusinessLogic parametroBusinessLogic = new ParametroBusinessLogic();
+        List<Parametro> parametros;
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 try
                 {
+                    parametros = parametroBusinessLogic.buscarTodos();
                     cargarLista();
                     cargarCombos();
+                    
+
                 }
                 catch (Exception ex)
                 {
                     //logger.ErrorException(ex.Message, ex);
-                    //EventLog.WriteEntry("Application", "Ocurrió el error: " + ex.Message, EventLogEntryType.Error);
+                    Console.WriteLine("Application", "Ocurrió el error: " + ex.Message);
+                    EventLog.WriteEntry("Application", "Ocurrió el error: " + ex.Message, EventLogEntryType.Error);
 
                 }
             }

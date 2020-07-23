@@ -91,6 +91,7 @@
     <Compile Include="Core\EntidadBusinessLogic.cs" />
     <Compile Include="Core\UsuarioBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\ParametroBusinessLogic.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
