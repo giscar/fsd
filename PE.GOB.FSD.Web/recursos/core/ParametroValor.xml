@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<sqlMap namespace="ParametroMap" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<sqlMap namespace="ParametroValorMap" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
   <alias>
-    <typeAlias alias="Parametro" type="PE.GOB.FSD.Entity.Core.Parametro,PE.GOB.FSD.Entity" />
+    <typeAlias alias="ParametroValor" type="PE.GOB.FSD.Entity.Core.ParametroValor,PE.GOB.FSD.Entity" />
   </alias>
   <resultMaps>
-    <resultMap id="rm_parametro" class="Parametro">
-      <result property="IdParametro" column="id"></result>
+    <resultMap id="rm_parametrovalor" class="ParametroValor">
+      <result property="IdParametroValor" column="id"></result>
+      <result property="IdParametro" column="id_parametros"></result>
       <result property="Nombre" column="c_nombre"></result>
       <result property="Descripcion" column="c_descripcion"></result>
+      <result property="Valor" column="c_valor"></result>
       <result property="Estado" column="n_estado"></result>
       <result property="UsuarioCreacion" column="c_usuario_creacion"></result>
       <result property="FechaCreacion" column="d_fecha_creacion"></result>
@@ -18,10 +20,12 @@
 
   <statements>
 
-    <insert id="insert_parametro">
-      INSERT INTO parametros (
+    <insert id="insert_parametro_valor">
+      INSERT INTO parametros_valor (
+      id_parametros,
       c_nombre,
       c_descripcion,
+      c_valor,
       n_estado,
       c_usuario_creacion,
       d_fecha_creacion,
@@ -29,8 +33,10 @@
       d_fecha_modificacion
       )
       VALUES
-      (#Nombre#,
+      (#IdParametro#,
+      #Nombre#,
       #Descripcion#,
+      #Valor#,
       #Estado#,
       #UsuarioCreacion#,
       #FechaCreacion#,
@@ -39,12 +45,12 @@
     </insert>
 
 
-    <select id="select_parametro_id" resultMap="rm_parametro" >
-      SELECT p.* FROM parametros p WHERE p.id = #IdParametro#
+    <select id="select_parametrovalor_idparametro" resultMap="rm_parametrovalor" >
+      SELECT p.* FROM parametros_valor p WHERE p.id_parametros = #IdParametro# ORDER BY id DESC
     </select>
 
-    <select id="select_parametro_todos" resultMap="rm_parametro" >
-      SELECT p.* FROM parametros p ORDER BY c_nombre DESC
+    <select id="select_parametrovalor_todos" resultMap="rm_parametrovalor" >
+      SELECT p.* FROM parametros_valor p ORDER BY c_nombre DESC
     </select>
 
   </statements>

@@ -26,17 +26,12 @@ namespace PE.GOB.FSD.Web.pages
 
         List<Usuario> listadoUsuarios;
 
-        ParametroBusinessLogic parametroBusinessLogic = new ParametroBusinessLogic();
-        List<Parametro> parametros;
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 try
                 {
-                    parametros = parametroBusinessLogic.buscarTodos();
                     cargarLista();
                     cargarCombos();
                     

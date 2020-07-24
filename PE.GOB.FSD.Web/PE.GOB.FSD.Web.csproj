@@ -1874,6 +1874,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="images\logo.png" />
+    <Content Include="pages\parametro.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="comun\PaginaBase.cs">
@@ -1925,6 +1926,12 @@
       <DependentUpon>plantilla.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pages\parametro.aspx.cs">
+      <DependentUpon>parametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\parametro.aspx.designer.cs">
+      <DependentUpon>parametro.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2075,6 +2082,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="recursos\core\Parametro.xml" />
+    <None Include="recursos\core\ParametroValor.xml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
