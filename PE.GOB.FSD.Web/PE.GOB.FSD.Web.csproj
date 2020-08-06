@@ -2087,20 +2087,6 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PE.GOB.FSD.BusinessLogic\PE.GOB.FSD.BusinessLogic.csproj">
-      <Project>{953DF26A-8370-49B6-890C-B2C757F96384}</Project>
-      <Name>PE.GOB.FSD.BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PE.GOB.FSD.Entity\PE.GOB.FSD.Entity.csproj">
-      <Project>{CF2D6DF6-C1F7-4DD7-B023-B1A55B5D3BE3}</Project>
-      <Name>PE.GOB.FSD.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PE.GOB.FSD.Util\PE.GOB.FSD.Util.csproj">
-      <Project>{AC54D9EC-4ADB-42EA-8D7D-4332442F1A46}</Project>
-      <Name>PE.GOB.FSD.Util</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
