@@ -1,0 +1,13 @@
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\bin\Debug\SBS.UIF.CONTRALAFT.Entity.xml
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\bin\Debug\SBS.UIF.CONTRALAFT.Entity.dll
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\bin\Debug\SBS.UIF.CONTRALAFT.Entity.pdb
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.csprojAssemblyReference.cache
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.csproj.CoreCompileInputs.cache
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.dll
+D:\Trabajo\CLEONV\contralaft-privado-master\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.pdb
+D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Entity\bin\Debug\SBS.UIF.CONTRALAFT.Entity.xml
+D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Entity\bin\Debug\SBS.UIF.CONTRALAFT.Entity.dll
+D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Entity\bin\Debug\SBS.UIF.CONTRALAFT.Entity.pdb
+D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.csproj.CoreCompileInputs.cache
+D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.dll
+D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Entity\obj\Debug\SBS.UIF.CONTRALAFT.Entity.pdb

@@ -1,0 +1,218 @@
+2020-08-21 01:07:51.9323 ERROR IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading SqlMap.
+- initialize result property: UsuarioCreacion
+- The error occurred in <sqlMap resource="Recursos/core/Entidad.xml" xmlns="http://ibatis.apache.org/dataMapper" />.  
+- Check the EntidadMap.rm_entidad. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure ResultMap named "EntidadMap.rm_entidad", Cause: There is no Set member named 'UsuarioCreacion' in class 'Entidad' ---> IBatisNet.Common.Exceptions.ProbeException: There is no Set member named 'UsuarioCreacion' in class 'Entidad'
+   en IBatisNet.Common.Utilities.Objects.ReflectionInfo.GetSetter(String memberName)
+   en IBatisNet.Common.Utilities.Objects.Members.SetAccessorFactory.CreateSetAccessor(Type targetType, String name)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultProperty.Initialize(ConfigurationScope configScope, Type resultClass)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.GetChildNode(ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.Initialize(ConfigurationScope configScope)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.Initialize(ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.Serializers.ResultMapDeSerializer.Deserialize(XmlNode node, ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.BuildResultMap()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.ConfigureSqlMap()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.ConfigureAndWatch(String resource, ConfigureHandler configureDelegate)
+   en SBS.UIF.CONTRALAFT.DataAccess.Mapper.MapperPro.InitMapper() en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Mapper\MapperPro.cs:línea 20
+   en SBS.UIF.CONTRALAFT.DataAccess.Mapper.MapperPro.Instance() en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Mapper\MapperPro.cs:línea 31
+   en SBS.UIF.CONTRALAFT.DataAccess.BaseService`1.QueryForObject(String nombreMetodo, Object map, String mapper) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\BaseDatos.cs:línea 20
+   en SBS.UIF.CONTRALAFT.DataAccess.Core.UsuarioDataAccess.buscarUsuario(Usuario _usuario) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Core\UsuarioDataAccess.cs:línea 19
+   en SBS.UIF.CONTRALAFT.BusinessLogic.Core.UsuarioBusinessLogic.buscarUsuario(Usuario _usuario) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.BusinessLogic\Core\UsuarioBusinessLogic.cs:línea 27
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 30 
+- The error occurred while loading SqlMap.
+- initialize result property: UsuarioCreacion
+- The error occurred in <sqlMap resource="Recursos/core/Entidad.xml" xmlns="http://ibatis.apache.org/dataMapper" />.  
+- Check the EntidadMap.rm_entidad.
+2020-08-21 02:17:01.8669 ERROR IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading SqlMap.
+- initialize result property: Id
+- The error occurred in <sqlMap resource="Recursos/core/Oficina.xml" xmlns="http://ibatis.apache.org/dataMapper" />.  
+- Check the OficinaMap.rm_oficina. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure ResultMap named "OficinaMap.rm_oficina", Cause: There is no Set member named 'Id' in class 'Perfil' ---> IBatisNet.Common.Exceptions.ProbeException: There is no Set member named 'Id' in class 'Perfil'
+   en IBatisNet.Common.Utilities.Objects.ReflectionInfo.GetSetter(String memberName)
+   en IBatisNet.Common.Utilities.Objects.Members.SetAccessorFactory.CreateSetAccessor(Type targetType, String name)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultProperty.Initialize(ConfigurationScope configScope, Type resultClass)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.GetChildNode(ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.Initialize(ConfigurationScope configScope)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.Initialize(ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.Serializers.ResultMapDeSerializer.Deserialize(XmlNode node, ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.BuildResultMap()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.ConfigureSqlMap()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.ConfigureAndWatch(String resource, ConfigureHandler configureDelegate)
+   en SBS.UIF.CONTRALAFT.DataAccess.Mapper.MapperPro.InitMapper() en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Mapper\MapperPro.cs:línea 20
+   en SBS.UIF.CONTRALAFT.DataAccess.Mapper.MapperPro.Instance() en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Mapper\MapperPro.cs:línea 31
+   en SBS.UIF.CONTRALAFT.DataAccess.BaseService`1.QueryForObject(String nombreMetodo, Object map, String mapper) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\BaseDatos.cs:línea 20
+   en SBS.UIF.CONTRALAFT.DataAccess.Core.UsuarioDataAccess.buscarUsuario(Usuario _usuario) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Core\UsuarioDataAccess.cs:línea 19
+   en SBS.UIF.CONTRALAFT.BusinessLogic.Core.UsuarioBusinessLogic.buscarUsuario(Usuario _usuario) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.BusinessLogic\Core\UsuarioBusinessLogic.cs:línea 27
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 30 
+- The error occurred while loading SqlMap.
+- initialize result property: Id
+- The error occurred in <sqlMap resource="Recursos/core/Oficina.xml" xmlns="http://ibatis.apache.org/dataMapper" />.  
+- Check the OficinaMap.rm_oficina.
+2020-08-21 02:34:46.2327 ERROR IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading SqlMap.
+- initialize result property: Id
+- The error occurred in <sqlMap resource="Recursos/core/Oficina.xml" xmlns="http://ibatis.apache.org/dataMapper" />.  
+- Check the OficinaMap.rm_oficina. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure ResultMap named "OficinaMap.rm_oficina", Cause: There is no Set member named 'Id' in class 'Perfil' ---> IBatisNet.Common.Exceptions.ProbeException: There is no Set member named 'Id' in class 'Perfil'
+   en IBatisNet.Common.Utilities.Objects.ReflectionInfo.GetSetter(String memberName)
+   en IBatisNet.Common.Utilities.Objects.Members.SetAccessorFactory.CreateSetAccessor(Type targetType, String name)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultProperty.Initialize(ConfigurationScope configScope, Type resultClass)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.GetChildNode(ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.Initialize(ConfigurationScope configScope)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en IBatisNet.DataMapper.Configuration.ResultMapping.ResultMap.Initialize(ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.Serializers.ResultMapDeSerializer.Deserialize(XmlNode node, ConfigurationScope configScope)
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.BuildResultMap()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.ConfigureSqlMap()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   en IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.ConfigureAndWatch(String resource, ConfigureHandler configureDelegate)
+   en SBS.UIF.CONTRALAFT.DataAccess.Mapper.MapperPro.InitMapper() en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Mapper\MapperPro.cs:línea 20
+   en SBS.UIF.CONTRALAFT.DataAccess.Mapper.MapperPro.Instance() en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Mapper\MapperPro.cs:línea 31
+   en SBS.UIF.CONTRALAFT.DataAccess.BaseService`1.QueryForObject(String nombreMetodo, Object map, String mapper) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\BaseDatos.cs:línea 20
+   en SBS.UIF.CONTRALAFT.DataAccess.Core.UsuarioDataAccess.buscarUsuario(Usuario _usuario) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.DataAccess\Core\UsuarioDataAccess.cs:línea 19
+   en SBS.UIF.CONTRALAFT.BusinessLogic.Core.UsuarioBusinessLogic.buscarUsuario(Usuario _usuario) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.BusinessLogic\Core\UsuarioBusinessLogic.cs:línea 27
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 30 
+- The error occurred while loading SqlMap.
+- initialize result property: Id
+- The error occurred in <sqlMap resource="Recursos/core/Oficina.xml" xmlns="http://ibatis.apache.org/dataMapper" />.  
+- Check the OficinaMap.rm_oficina.
+2020-08-21 02:58:24.6596 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 09:19:52.7526 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 09:19:54.4092 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 09:24:02.8050 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:36:14.0585 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:42:31.5993 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:42:33.8629 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:42:44.3388 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:46:33.0775 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:48:40.5749 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 20:49:56.0419 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 21:04:54.7148 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 21:10:25.9423 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 21:59:34.3845 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 22:12:05.1543 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.
+2020-08-21 22:14:42.8880 ERROR System.Threading.ThreadAbortException: Subproceso anulado.
+   en System.Threading.Thread.AbortInternal()
+   en System.Threading.Thread.Abort(Object stateInfo)
+   en System.Web.HttpResponse.AbortCurrentThread()
+   en System.Web.HttpResponse.End()
+   en System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   en System.Web.HttpResponse.Redirect(String url)
+   en SBS.UIF.CONTRALAFT.Web.pages.Login.Submit_Login(Object sender, EventArgs e) en D:\proynet\fsd2\SBS.UIF.CONTRALAFT.Web\pages\login.aspx.cs:línea 32 Subproceso anulado.

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="UbigeoMap" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="Ubigeo" type="PE.GOB.FSD.Entity.Common.Ubigeo,PE.GOB.FSD.Entity" />
+  </alias>
+  <resultMaps>
+    <resultMap id="rm_ubigeo" class="Ubigeo">
+      <result property="IdDistrito" column="C_ID_DSTRO"></result>
+      <result property="IdProvincia" column="C_ID_PROV"></result>
+      <result property="IdDepartamento" column="C_ID_DPTO"></result>
+      <result property="DesDistrito" column="C_DESCDSTRO"></result>
+      <result property="DesProvincia" column="C_DESCPROV"></result>
+      <result property="DesDepartamento" column="C_DESCDPTO"></result>
+      <result property="Coordenadax" column="C_COORDENADAX"></result>
+      <result property="Coordenaday" column="C_COORDENADAY"></result>
+      <result property="FlagZoom" column="N_ZOOM"></result>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id="select_departamento" resultMap="rm_ubigeo" >
+      SELECT null C_ID_DSTRO, null C_ID_PROV, C_ID_DPTO, null C_DESCDSTRO, null C_DESCPROV,  C_DESCDPTO, C_COORDENADAX, C_COORDENADAY, N_ZOOM FROM UBIGEO_DPTO
+    </select>
+    
+    <select id="select_provincia" resultMap="rm_ubigeo" >
+      SELECT null C_ID_DSTRO, C_ID_PROV, C_ID_DPTO,  null C_DESCDSTRO, C_DESCPROV, null C_DESCDPTO, C_COORDENADAX,C_COORDENADAY,N_ZOOM FROM UBIGEO_PROV where C_ID_DPTO = #IdDepartamento#
+    </select>
+
+    <select id="select_distrito" resultMap="rm_ubigeo" >
+      SELECT C_ID_DSTRO, C_ID_PROV, C_ID_DPTO,  C_DESCDSTRO, null C_DESCPROV,  null C_DESCDPTO, C_COORDENADAX,C_COORDENADAY,N_ZOOM FROM UBIGEO_DSTRO where C_ID_DPTO = #IdDepartamento# and C_ID_PROV = #IdProvincia#
+    </select>
+
+  </statements>
+
+
+</sqlMap>
