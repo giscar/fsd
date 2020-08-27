@@ -94,6 +94,8 @@
     <Compile Include="Core\OficinaBusinessLogic.cs" />
     <Compile Include="Core\UsuarioBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\ParametroBusinessLogic.cs" />
+    <Compile Include="Core\ParametroValorBusinessLogic.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

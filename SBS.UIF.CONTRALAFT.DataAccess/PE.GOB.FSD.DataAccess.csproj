@@ -114,6 +114,8 @@
     <Compile Include="Mapper\CastType.cs" />
     <Compile Include="Mapper\MapperPro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\ParametroDataAccess.cs" />
+    <Compile Include="Core\ParametroValorDataAccess.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

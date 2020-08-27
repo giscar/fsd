@@ -88,6 +88,9 @@
     <Compile Include="Core\Oficina.cs" />
     <Compile Include="Core\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\EntidadAuditoriaComun.cs" />
+    <Compile Include="Core\Parametro.cs" />
+    <Compile Include="Core\ParametroValor.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
