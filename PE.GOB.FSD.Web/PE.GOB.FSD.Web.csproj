@@ -32,7 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <AssemblyName>SBS.UIF.CONTRALAFT.Web</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -42,7 +41,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <AssemblyName>SBS.UIF.CONTRALAFT.Web</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IBatisNet.Common, Version=1.6.2.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
@@ -66,7 +64,6 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -1367,11 +1364,11 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SBS.UIF.CONTRALAFT.BusinessLogic\PE.GOB.FSD.BusinessLogic.csproj">
+    <ProjectReference Include="..\PE.GOB.FSD.BusinessLogic\PE.GOB.FSD.BusinessLogic.csproj">
       <Project>{953DF26A-8370-49B6-890C-B2C757F96384}</Project>
       <Name>PE.GOB.FSD.BusinessLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SBS.UIF.CONTRALAFT.Entity\PE.GOB.FSD.Entity.csproj">
+    <ProjectReference Include="..\PE.GOB.FSD.Entity\PE.GOB.FSD.Entity.csproj">
       <Project>{CF2D6DF6-C1F7-4DD7-B023-B1A55B5D3BE3}</Project>
       <Name>PE.GOB.FSD.Entity</Name>
     </ProjectReference>

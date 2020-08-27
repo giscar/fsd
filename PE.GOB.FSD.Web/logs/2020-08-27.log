@@ -378,3 +378,19 @@ Invalid column name 'D_FEC_REGISTRO'.
   at System.Web.HttpResponse.Redirect (System.String url, System.Boolean endResponse) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:907 
   at System.Web.HttpResponse.Redirect (System.String url) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:902 
   at PE.GOB.FSD.Web.pages.Login.Submit_Login (System.Object sender, System.EventArgs e) [0x00078] in /Users/ccarrillojara/Documentos/Consultorias/FSD/nuevo_git/fsd/SBS.UIF.CONTRALAFT.Web/pages/login.aspx.cs:32  Thread was being aborted.
+2020-08-27 18:42:31.7035 ERROR System.Threading.ThreadAbortException: Thread was being aborted.
+  at (wrapper managed-to-native) System.Threading.Thread.Abort_internal(System.Threading.InternalThread,object)
+  at System.Threading.Thread.Abort (System.Object stateInfo) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.Threading/Thread.cs:453 
+  at System.Web.HttpResponse.End () [0x00016] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:637 
+  at System.Web.HttpResponse.Redirect (System.String url, System.Boolean endResponse, System.Int32 code) [0x0015c] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:896 
+  at System.Web.HttpResponse.Redirect (System.String url, System.Boolean endResponse) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:907 
+  at System.Web.HttpResponse.Redirect (System.String url) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:902 
+  at PE.GOB.FSD.Web.pages.perfil.Page_Load (System.Object sender, System.EventArgs e) [0x00023] in /Users/ccarrillojara/Documentos/Consultorias/FSD/nuevo_git/fsd/PE.GOB.FSD.Web/pages/perfil.aspx.cs:31  Thread was being aborted.
+2020-08-27 18:42:35.6516 ERROR System.Threading.ThreadAbortException: Thread was being aborted.
+  at (wrapper managed-to-native) System.Threading.Thread.Abort_internal(System.Threading.InternalThread,object)
+  at System.Threading.Thread.Abort (System.Object stateInfo) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.Threading/Thread.cs:453 
+  at System.Web.HttpResponse.End () [0x00016] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:637 
+  at System.Web.HttpResponse.Redirect (System.String url, System.Boolean endResponse, System.Int32 code) [0x0015c] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:896 
+  at System.Web.HttpResponse.Redirect (System.String url, System.Boolean endResponse) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:907 
+  at System.Web.HttpResponse.Redirect (System.String url) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/System.Web/System.Web/HttpResponse.cs:902 
+  at PE.GOB.FSD.Web.pages.Login.Submit_Login (System.Object sender, System.EventArgs e) [0x00078] in /Users/ccarrillojara/Documentos/Consultorias/FSD/nuevo_git/fsd/PE.GOB.FSD.Web/pages/login.aspx.cs:32  Thread was being aborted.
