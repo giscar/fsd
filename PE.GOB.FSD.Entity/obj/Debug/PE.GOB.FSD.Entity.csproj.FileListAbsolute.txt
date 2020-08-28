@@ -11,3 +11,9 @@ D:/proynet/fsd3/SBS.UIF.CONTRALAFT.Entity/bin/Debug/PE.GOB.FSD.Entity.pdb
 D:/proynet/fsd3/SBS.UIF.CONTRALAFT.Entity/obj/Debug/PE.GOB.FSD.Entity.csproj.CoreCompileInputs.cache
 D:/proynet/fsd3/SBS.UIF.CONTRALAFT.Entity/obj/Debug/PE.GOB.FSD.Entity.dll
 D:/proynet/fsd3/SBS.UIF.CONTRALAFT.Entity/obj/Debug/PE.GOB.FSD.Entity.pdb
+/Users/ccarrillojara/Documentos/Consultorias/FSD/git/fsd/PE.GOB.FSD.Entity/bin/Debug/PE.GOB.FSD.Entity.xml
+/Users/ccarrillojara/Documentos/Consultorias/FSD/git/fsd/PE.GOB.FSD.Entity/bin/Debug/PE.GOB.FSD.Entity.dll
+/Users/ccarrillojara/Documentos/Consultorias/FSD/git/fsd/PE.GOB.FSD.Entity/bin/Debug/PE.GOB.FSD.Entity.pdb
+/Users/ccarrillojara/Documentos/Consultorias/FSD/git/fsd/PE.GOB.FSD.Entity/obj/Debug/PE.GOB.FSD.Entity.csproj.CoreCompileInputs.cache
+/Users/ccarrillojara/Documentos/Consultorias/FSD/git/fsd/PE.GOB.FSD.Entity/obj/Debug/PE.GOB.FSD.Entity.dll
+/Users/ccarrillojara/Documentos/Consultorias/FSD/git/fsd/PE.GOB.FSD.Entity/obj/Debug/PE.GOB.FSD.Entity.pdb
