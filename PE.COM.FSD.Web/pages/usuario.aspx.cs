@@ -281,7 +281,7 @@ namespace PE.COM.FSD.Web.pages
                     DesTipo = txtNombre.Value,
                     CodRuc = txtRuc.Value,
                     FecRegistro = new DateTime(),
-                    UsuRegistro = UsuarioSession().DetCodigo,
+                    UsuarioCreacion = UsuarioSession().DetCodigo,
                     FlActivo = (int)Constantes.EstadoFlag.ACTIVO
                 };
                 _entidadBusinessLogic.guardarEntidad(entidad);

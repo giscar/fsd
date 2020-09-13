@@ -92,6 +92,7 @@
     <Compile Include="Core\ParametroValor.cs" />
     <Compile Include="Common\Ubigeo.cs" />
     <Compile Include="Common\EntidadAuditoriaComun.cs" />
+    <Compile Include="Core\PreSeleccion.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

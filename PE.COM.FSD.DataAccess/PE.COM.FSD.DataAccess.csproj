@@ -116,6 +116,7 @@
     <Compile Include="Core\OficinaDataAccess.cs" />
     <Compile Include="Core\ParametroDataAccess.cs" />
     <Compile Include="Core\ParametroValorDataAccess.cs" />
+    <Compile Include="Core\PreSeleccionDataAccess.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

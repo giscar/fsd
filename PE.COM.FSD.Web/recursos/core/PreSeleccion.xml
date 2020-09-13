@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="ParametroMap" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="PreSeleccion" type="PE.COM.FSD.Entity.Core.PreSeleccion,PE.COM.FSD.Entity" />
+  </alias>
+  <resultMaps>
+    <resultMap id="rm_preseleccion" class="PreSeleccion">
+      <result property="IdEntidad" column="id_entidad"></result>
+      <result property="Nombre" column="c_nombre"></result>
+      <result property="ClasificacionRiesgo" column="clasificacion_riesgo"></result>
+      <result property="PorcentajeOficinas" column="porcentaje_oficinas"></result>
+      <result property="DeudaFSD" column="deuda_fsd"></result>
+            
+      <result property="IdEntidadInput" column="id_entidad_input"></result>
+      <result property="IndClasificadorInput" column="ind_clasificador_input"></result>
+      <result property="PorcentajeOficinaInput" column="por_oficinas_input"></result>
+      <result property="IndDeudaFSDInput" column="ind_deudas_input"></result>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+        
+    <select id="select_preseleccion" resultMap="rm_preseleccion" >
+      SELECT * FROM fn_pre_seleccion(#IdEntidadInput#, #IndClasificadorInput#, #PorcentajeOficinaInput#, #IndDeudaFSDInput#)
+    </select>
+        
+
+  </statements>
+</sqlMap>

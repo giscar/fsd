@@ -97,6 +97,7 @@
     <Compile Include="Core\ParametroBusinessLogic.cs" />
     <Compile Include="Core\ParametroValorBusinessLogic.cs" />
     <Compile Include="Common\UbigeoBusinessLogic.cs" />
+    <Compile Include="Core\PreSeleccionBusinessLogic.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

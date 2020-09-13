@@ -14,10 +14,21 @@ namespace PE.COM.FSD.Web.util
             ADMINISTRADOR = '1'
         }
 
+        public enum Parametro
+        {
+            CLASIFICACION_RIESGO = 1,
+            PORCENTAJE_COINCIDENCIA_OFICINAS = 2,
+            DEUDA_FSD = 3
+        }
+
         public const String PaginaInicioLogin = "../pages/login.aspx";
         public const String codigoPerfilAdministrador = "1";
         public const String codigoPerfilGestor = "2";
         public const String selectValueDefault = "0";
         public const String selectLabelDefault = "Seleccione";
+
+        public const String SELECCION_DEFECTO_CLASIFICACION_RIESGO = "B";
+        public const String SELECCION_DEFECTO_PORCENTAJE_COINCIDENCIA_OFICINAS = "75%";
+        public const String SELECCION_DEFECTO_DEUDA_FSD = "NO";
     }
 }
