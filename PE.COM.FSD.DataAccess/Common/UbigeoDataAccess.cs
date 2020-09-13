@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PE.GOB.FSD.Entity.Common;
-using PE.GOB.FSD.DataAccess.Mapper;
+using PE.COM.FSD.Entity.Common;
+using PE.COM.FSD.DataAccess.Mapper;
 
-namespace PE.GOB.FSD.DataAccess.Common
+namespace PE.COM.FSD.DataAccess.Common
 {
     public class UbigeoDataAccess
     {

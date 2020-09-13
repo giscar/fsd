@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PE.GOB.FSD.Entity.Core;
-using PE.GOB.FSD.DataAccess.Core;
+using PE.COM.FSD.Entity.Core;
+using PE.COM.FSD.DataAccess.Core;
 
-namespace PE.GOB.FSD.BusinessLogic.Core
+namespace PE.COM.FSD.BusinessLogic.Core
 {
     public class OficinaBusinessLogic
     {

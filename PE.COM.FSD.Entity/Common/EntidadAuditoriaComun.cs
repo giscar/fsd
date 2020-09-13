@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PE.GOB.FSD.Entity.Common
+namespace PE.COM.FSD.Entity.Common
 {
     public class EntidadAuditoriaComun
     {

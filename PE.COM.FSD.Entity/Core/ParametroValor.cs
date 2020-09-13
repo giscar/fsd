@@ -1,7 +1,7 @@
 ﻿using System;
-using PE.GOB.FSD.Entity.Common;
+using PE.COM.FSD.Entity.Common;
 
-namespace PE.GOB.FSD.Entity.Core
+namespace PE.COM.FSD.Entity.Core
 {
     public class ParametroValor : EntidadAuditoriaComun
     {

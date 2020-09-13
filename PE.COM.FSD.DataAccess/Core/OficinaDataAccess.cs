@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PE.GOB.FSD.Entity.Core;
-using PE.GOB.FSD.DataAccess.Mapper;
+using PE.COM.FSD.Entity.Core;
+using PE.COM.FSD.DataAccess.Mapper;
 
-namespace PE.GOB.FSD.DataAccess.Core
+namespace PE.COM.FSD.DataAccess.Core
 {
     public class OficinaDataAccess
     {

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <sqlMap namespace="ParametroMap" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
   <alias>
-    <typeAlias alias="Parametro" type="PE.GOB.FSD.Entity.Core.Parametro,PE.GOB.FSD.Entity" />
+    <typeAlias alias="Parametro" type="PE.COM.FSD.Entity.Core.Parametro,PE.COM.FSD.Entity" />
   </alias>
   <resultMaps>
     <resultMap id="rm_parametro" class="Parametro">

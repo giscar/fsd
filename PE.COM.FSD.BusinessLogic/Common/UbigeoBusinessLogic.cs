@@ -1,9 +1,9 @@
 ﻿
 using System.Collections.Generic;
-using PE.GOB.FSD.Entity.Common;
-using PE.GOB.FSD.DataAccess.Common;
+using PE.COM.FSD.Entity.Common;
+using PE.COM.FSD.DataAccess.Common;
 
-namespace PE.GOB.FSD.BusinessLogic.Common
+namespace PE.COM.FSD.BusinessLogic.Common
 {
     public class UbigeoBusinessLogic
     {

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace PE.GOB.FSD.Entity.Core
+namespace PE.COM.FSD.Entity.Core
 {
     public class Oficina
     {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="plantilla.Master" AutoEventWireup="true" CodeBehind="parametro.aspx.cs" Inherits="PE.GOB.FSD.Web.pages.parametro" %>
+﻿<%@ Page Language="C#" MasterPageFile="plantilla.Master" AutoEventWireup="true" CodeBehind="parametro.aspx.cs" Inherits="PE.COM.FSD.Web.pages.parametro" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="server">
     <asp:ScriptManager runat="server"></asp:ScriptManager>
