@@ -30,5 +30,10 @@ namespace PE.COM.FSD.Web.util
         public const String SELECCION_DEFECTO_CLASIFICACION_RIESGO = "B";
         public const String SELECCION_DEFECTO_PORCENTAJE_COINCIDENCIA_OFICINAS = "75%";
         public const String SELECCION_DEFECTO_DEUDA_FSD = "NO";
+
+        public const String MensajeComboRegistro = "- Seleccione -";
+        public const String MensajeComboReporte = "- Todos -";
+
+
     }
 }

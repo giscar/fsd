@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PE.COM.FSD.Entity</RootNamespace>
     <AssemblyName>SBS.UIF.CONTRALAFT.Entity</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -82,6 +82,7 @@
     <Compile Include="Common\PerfilRol.cs" />
     <Compile Include="Common\Perfil.cs" />
     <Compile Include="Core\Accion.cs" />
+    <Compile Include="Core\Contacto.cs" />
     <Compile Include="Core\Indicador.cs" />
     <Compile Include="Core\IndicadorEntidad.cs" />
     <Compile Include="Core\Entidad.cs" />

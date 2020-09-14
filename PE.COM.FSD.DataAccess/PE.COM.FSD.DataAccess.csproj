@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PE.COM.FSD.DataAccess</RootNamespace>
     <AssemblyName>SBS.CONTRALAFT.BUZ.DataAccess</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -105,6 +105,7 @@
     <Compile Include="Common\RolDataAccess.cs" />
     <Compile Include="Common\MenuDataAccess.cs" />
     <Compile Include="Core\AccionDataAccess.cs" />
+    <Compile Include="Core\ContactoDataAccess.cs" />
     <Compile Include="Core\IndicadorDataAccess.cs" />
     <Compile Include="Core\IndicadorEntidadDataAccess.cs" />
     <Compile Include="Core\EntidadDataAccess.cs" />

@@ -18,6 +18,9 @@
       <result property="Distrito"         column="C_DESCDSTRO"></result>
       <result property="Provincia"        column="C_DESCPROV"></result>
       <result property="Departamento"     column="C_DESCDPTO"></result>
+      <result property="Latitud"          column="c_latitud"></result>
+      <result property="Longitud"         column="c_longitud"></result>
+      <result property="CodigoPostal"     column="c_codigo_postal"></result>
     </resultMap>
   </resultMaps>
 
@@ -50,7 +53,10 @@
       UPDATE entidad SET
       C_DES_RAZON = #DesTipo#,
       C_COD_RUC = #CodRuc#,
-      c_direccion = #Direccion#
+      c_direccion = #Direccion#,
+      c_latitud = #Latitud#,
+      c_longitud = #Longitud#,
+      c_codigo_postal = #CodigoPostal#
       WHERE N_COD_ENTIDAD =  #IdTipo#
     </update>
     
@@ -64,7 +70,10 @@
       D_FEC_REGISTRO,
       c_id_dstro,
       c_id_prov,
-      c_id_dpto)
+      c_id_dpto,
+      c_latitud,
+      c_longitud,
+      c_codigo_postal)
       VALUES
       (#DesTipo#,
       #CodRuc#,
@@ -74,8 +83,11 @@
       #FecRegistro#,
       #IdDstro#,
       #IdProv#,
-      #IdDpto#
-      )
+      #IdDpto#,
+      #Latitud#,
+      #Longitud#,
+      #CodigoPostal#)
     </insert>
+    
   </statements>
 </sqlMap>

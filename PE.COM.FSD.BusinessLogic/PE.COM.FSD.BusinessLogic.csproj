@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PE.COM.FSD.BusinessLogic</RootNamespace>
     <AssemblyName>SBS.UIF.CONTRALAFT.BusinessLogic</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -88,6 +88,7 @@
     <Compile Include="Common\RolBusinessLogic.cs" />
     <Compile Include="Common\MenuBusinessLogic.cs" />
     <Compile Include="Core\AccionBusinessLogic.cs" />
+    <Compile Include="Core\ContactoBusinessLogic.cs" />
     <Compile Include="Core\IndicadorBusinessLogic.cs" />
     <Compile Include="Core\IndicadorEntidadBusinessLogic.cs" />
     <Compile Include="Core\EntidadBusinessLogic.cs" />

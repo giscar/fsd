@@ -10,6 +10,7 @@ namespace PE.COM.FSD.Entity.Core
         public string DesTipo { get; set; }
         public string CodRuc { get; set; }
         public string Direccion { get; set; }
+        public String CodigoPostal { get; set; }
         public int Estado { get; set; }
         public string UsuarioCreacion { get; set; }
         public DateTime FecRegistro { get; set; }
@@ -22,6 +23,8 @@ namespace PE.COM.FSD.Entity.Core
         public string Provincia { get; set; }
         public string Departamento { get; set; }
         public int FlActivo { get; set; } // vericar
+        public string Longitud { get; set; }
+        public string Latitud { get; set; }
     }
 }
 #pragma warning restore 1591

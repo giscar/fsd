@@ -27,5 +27,15 @@ namespace PE.COM.FSD.BusinessLogic.Core
             _entidadDataAccess.guardarEntidad(_entidad);
         }
 
+        public Entidad buscarEntidadForID(int id)
+        {
+            return _entidadDataAccess.buscarEntidadForID(id);
+        }
+
+        public void ActualizarEntidad(Entidad _entidad)
+        {
+            _entidadDataAccess.ActualizarEntidad(_entidad);
+        }
+
     }
 }

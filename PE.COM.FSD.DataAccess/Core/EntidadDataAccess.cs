@@ -18,5 +18,16 @@ namespace PE.COM.FSD.DataAccess.Core
         {
            Convert.ToInt32(MapperPro.Instance().Insert("insert_entidad", _entidad));
         }
+
+        public Entidad buscarEntidadForID(int id)
+        {
+            return (BaseService<Entidad>.QueryForObject("select_entidad_id", id));
+        }
+
+        public void ActualizarEntidad(Entidad _entidad)
+        {
+            MapperPro.Instance().Update("update_entidad", _entidad);
+        }
+
     }
 }
