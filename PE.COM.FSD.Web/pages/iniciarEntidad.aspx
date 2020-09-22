@@ -4,10 +4,10 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <link rel="stylesheet" href="/css/style.css">
     <div class="row">
-        <div class="col-sm-9 col-md-6 col-lg-8">
+        <div class="col-md-6">
             <h5 class="card-title mb-4">Listado de Entidades Financieras</h5>
         </div>
-        <div class="col-sm-3 col-md-6 col-lg-4 d-flex justify-content-end">
+        <div class="col-md-6">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entidadModal">
                 Crear entidad
             </button>
@@ -334,9 +334,9 @@
                                             </ItemTemplate>
                                         </asp:TemplateField>
 
-                                        <asp:TemplateField ShowHeader="true" HeaderText="Contactos" ItemStyle-Width="10%">
+                                        <asp:TemplateField ShowHeader="false" ItemStyle-Width="10%">
                                             <ItemTemplate>
-                                                <asp:LinkButton ID="linkbtnContactos" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_contactos">Agregar</asp:LinkButton>
+                                                <asp:LinkButton ID="linkbtnContactos" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_contactos">Contactos</asp:LinkButton>
                                             </ItemTemplate>
                                         </asp:TemplateField>
 

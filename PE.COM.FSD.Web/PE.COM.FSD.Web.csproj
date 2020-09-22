@@ -118,6 +118,7 @@
     <Content Include="images\sprites\jsgrid-icons.png" />
     <Content Include="images\sprites\red.png" />
     <Content Include="images\sprites\yellow.png" />
+    <Content Include="js\pages\contacto.js" />
     <Content Include="pages\contactosEntidad.aspx" />
     <Content Include="pages\editarAccion.aspx" />
     <Content Include="pages\iniciarEntidad.aspx" />

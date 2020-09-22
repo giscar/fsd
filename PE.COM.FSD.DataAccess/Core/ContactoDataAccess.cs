@@ -10,9 +10,9 @@ namespace PE.COM.FSD.DataAccess.Core
 {
     public class ContactoDataAccess
     {
-        public List<Contacto> listarPorEntidad()
+        public List<Contacto> listarContactoPorEntidad(int id)
         {
-            return (BaseService<Contacto>.QueryForList("select_contacto", null));
+            return (BaseService<Contacto>.QueryForList("select_contacto_porEntidad", id));
         }
 
         public void guardarContacto(Contacto _contacto)
@@ -20,7 +20,7 @@ namespace PE.COM.FSD.DataAccess.Core
             Convert.ToInt32(MapperPro.Instance().Insert("insert_contacto", _contacto));
         }
 
-        public Contacto buscarContactoForID(int id)
+        public Contacto buscarContactoPorId(int id)
         {
             return (BaseService<Contacto>.QueryForObject("select_contacto_id", id));
         }
@@ -30,5 +30,9 @@ namespace PE.COM.FSD.DataAccess.Core
             MapperPro.Instance().Update("update_contacto", _contacto);
         }
 
+        public void InactivarContacto(Contacto _contacto)
+        {
+            MapperPro.Instance().Update("inactive_contacto", _contacto);
+        }
     }
 }

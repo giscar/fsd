@@ -7,7 +7,8 @@ namespace PE.COM.FSD.Entity.Core
     public class Contacto
     {
         public int Id { get; set; }
-        public int IdEntidad { get; set; }
+        public int IdTipo { get; set; }
+        public string Entidad { get; set; }
         public int IdCargo { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }

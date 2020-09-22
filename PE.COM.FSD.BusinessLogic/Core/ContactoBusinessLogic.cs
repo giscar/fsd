@@ -18,9 +18,9 @@ namespace PE.COM.FSD.BusinessLogic.Core
 
         }
 
-        public List<Contacto> listarPorContacto()
+        public List<Contacto> listarContactoPorEntidad(int id)
         {
-            return (_contactoDataAccess.listarPorEntidad());
+            return (_contactoDataAccess.listarContactoPorEntidad(id));
         }
 
         public void guardarContacto(Contacto _contacto)
@@ -28,14 +28,19 @@ namespace PE.COM.FSD.BusinessLogic.Core
             _contactoDataAccess.guardarContacto(_contacto);
         }
 
-        public Contacto buscarContactoForID(int id)
+        public Contacto buscarContactoPorId(int id)
         {
-            return _contactoDataAccess.buscarContactoForID(id);
+            return _contactoDataAccess.buscarContactoPorId(id);
         }
 
         public void ActualizarContacto(Contacto _contacto)
         {
             _contactoDataAccess.ActualizarContacto(_contacto);
+        }
+
+        public void InactivarContacto(Contacto _contacto)
+        {
+            _contactoDataAccess.InactivarContacto(_contacto);
         }
     }
 }
