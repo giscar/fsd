@@ -29,10 +29,5 @@ namespace PE.COM.FSD.DataAccess.Core
             MapperPro.Instance().Update("update_entidad", _entidad);
         }
 
-        public Entidad EntidadForId(int _idEntidad)
-        {
-            return (BaseService<Entidad>.QueryForObject("select_entidad_id", _idEntidad));
-        }
-
     }
 }

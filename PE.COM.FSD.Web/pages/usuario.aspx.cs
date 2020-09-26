@@ -54,7 +54,7 @@ namespace PE.COM.FSD.Web.pages
         {
             try
             {
-                LlenarDropDownList(ddlCodigoEntidad, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), "0", "Seleccione");
+                LlenarDropDownList(ddlCodigoEntidad, new EntidadBusinessLogic().ListarPorEntidad().OrderBy(x => x.DesTipo), "0", "Seleccione");
                 LlenarDropDownList(ddlCodigoPerfil, new PerfilBusinessLogic().ListarPorPerfil().OrderBy(x => x.DesTipo), "0", "Seleccione");
             }
             catch (Exception ex)
@@ -257,7 +257,7 @@ namespace PE.COM.FSD.Web.pages
         {
             try
             {
-                LlenarDropDownList(ddlCodigoEntidadEdit, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), Constantes.selectValueDefault, Constantes.selectLabelDefault);
+                LlenarDropDownList(ddlCodigoEntidadEdit, new EntidadBusinessLogic().ListarPorEntidad().OrderBy(x => x.DesTipo), Constantes.selectValueDefault, Constantes.selectLabelDefault);
                 LlenarDropDownList(ddlCodigoPerfilEdit, new PerfilBusinessLogic().ListarPorPerfil().OrderBy(x => x.DesTipo), Constantes.selectValueDefault, Constantes.selectLabelDefault);
             }
             catch (Exception ex)
@@ -305,7 +305,7 @@ namespace PE.COM.FSD.Web.pages
                     UsuarioCreacion = UsuarioSession().DetCodigo,
                     FlActivo = (int)Constantes.EstadoFlag.ACTIVO
                 };
-                _entidadBusinessLogic.guardarEntidad(entidad);
+                _entidadBusinessLogic.GuardarEntidad(entidad);
             }
             catch (Exception ex)
             {

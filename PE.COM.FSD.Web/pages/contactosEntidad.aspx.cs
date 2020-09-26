@@ -55,7 +55,7 @@ namespace PE.COM.FSD.Web.pages
         protected void cargaInformacionEntidad(int idEntidad)
         {
             Entidad entidad = new Entidad();
-            entidad = entidadBusinessLogic.buscarEntidadForID(idEntidad);
+            entidad = entidadBusinessLogic.BuscarEntidadForID(idEntidad);
             txtContactoEntidad.Value = entidad.DesTipo;
         }
 

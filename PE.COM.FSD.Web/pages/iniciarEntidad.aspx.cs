@@ -85,7 +85,7 @@ namespace PE.COM.FSD.Web.pages
 
         private void cargarLista()
         {
-            listadoEntidades = entidadBusinessLogic.listarPorEntidad();
+            listadoEntidades = entidadBusinessLogic.ListarPorEntidad();
             GridView2.DataSource = listadoEntidades;
             GridView2.DataBind();
         }
@@ -231,7 +231,7 @@ namespace PE.COM.FSD.Web.pages
                 UsuarioCreacion = usuarioSession.DetCodigo,
                 Estado = (int)Constantes.EstadoFlag.ACTIVO
             };
-            entidadBusinessLogic.guardarEntidad(entidad);
+            entidadBusinessLogic.GuardarEntidad(entidad);
             cargarLista();
             limpiar();
         }
@@ -288,7 +288,7 @@ namespace PE.COM.FSD.Web.pages
             int idEntidad = int.Parse(e.CommandArgument.ToString());
 
             Entidad entidad = new Entidad();
-            entidad = entidadBusinessLogic.buscarEntidadForID(idEntidad);
+            entidad = entidadBusinessLogic.BuscarEntidadForID(idEntidad);
 
             if(e.CommandName == "btn_contactos")
             {
