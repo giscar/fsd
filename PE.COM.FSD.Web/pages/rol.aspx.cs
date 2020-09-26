@@ -8,7 +8,6 @@ using NLog;
 using PE.COM.FSD.BusinessLogic.Common;
 using PE.COM.FSD.Entity.Common;
 using PE.COM.FSD.Web.util;
-using SBS.UIF.BUZ.Web.util;
 using System.Data;
 
 namespace PE.COM.FSD.Web.pages

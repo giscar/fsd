@@ -34,6 +34,10 @@ namespace PE.COM.FSD.Web.util
         public const String MensajeComboRegistro = "- Seleccione -";
         public const String MensajeComboReporte = "- Todos -";
 
+        public const String textoSubject = "Creación de usuario del modulo de CONTRALAFT";
+        public const String estadoPlanBORRADOR = "Borrador";
+        public const String estadoPlanPUBLICADO = "Publicado";
+
 
     }
 }

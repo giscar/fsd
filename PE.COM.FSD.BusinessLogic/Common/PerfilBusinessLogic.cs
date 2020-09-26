@@ -42,5 +42,6 @@ namespace PE.COM.FSD.BusinessLogic.Common
         {
             return _perfilDataAccess.ListarPerfirForRol(_rol);
         }
+
     }
 }

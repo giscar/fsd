@@ -100,7 +100,7 @@
     <Reference Include="System.Transactions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.9\lib\net45\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.2.0.11\lib\net45\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
@@ -1243,6 +1243,8 @@
     <Compile Include="pages\parametro.aspx.designer.cs">
       <DependentUpon>parametro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="util\Comunicacion.cs" />
+    <Compile Include="util\Correo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -37,7 +37,6 @@ namespace PE.COM.FSD.DataAccess.Common
             MapperPro.Instance().Update("inactive_perfil", _perfil);
         }
 
-        
 
     }
 }

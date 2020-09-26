@@ -24,7 +24,7 @@ namespace PE.COM.FSD.Entity.Core
         public DateTime FecModificacion { get; set; }
         public string UsuModificacion { get; set; }
         public string NombrePerfil { get; set; }
-        
+        public string ContraseniaEmail { get; set; }
     }
 }
 

@@ -48,6 +48,10 @@
       inner join UBIGEO_DPTO de on e.c_id_dpto = de.c_id_dpto
       where N_COD_ENTIDAD =  #IdTipo#
     </select>
+        
+    <select id="select_entidad_id" resultMap="rm_entidad"  parameterClass="int">
+      SELECT * FROM ENTIDAD WHERE N_COD_ENTIDAD = #value#
+    </select>
 
     <update id="update_entidad">
       UPDATE entidad SET

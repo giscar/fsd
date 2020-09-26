@@ -13,8 +13,8 @@ using PE.COM.FSD.Entity.Core;
 using PE.COM.FSD.Web.comun;
 using System.Web.Security;
 using PE.COM.FSD.Web.util;
-using SBS.UIF.BUZ.Web.util;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace PE.COM.FSD.Web.pages
 {
@@ -25,6 +25,8 @@ namespace PE.COM.FSD.Web.pages
         UsuarioBusinessLogic _usuarioBusinessLogic = new UsuarioBusinessLogic();
 
         EntidadBusinessLogic _entidadBusinessLogic = new EntidadBusinessLogic();
+
+        PerfilBusinessLogic _perfilBusinessLogic = new PerfilBusinessLogic();
 
         List<Usuario> listadoUsuarios;
 
@@ -87,6 +89,7 @@ namespace PE.COM.FSD.Web.pages
                     file.SaveAs(Server.MapPath(Path.Combine("~/App_Data/", fname)));
                 }
                 string password = Membership.GeneratePassword(12, 1);
+                password = Regex.Replace(password, @"[^a-zA-Z0-9]", m => "9");
                 SHA256Managed sha = new SHA256Managed();
                 byte[] pass = Encoding.Default.GetBytes(password);
                 byte[] passCifrado = sha.ComputeHash(pass);
@@ -101,9 +104,11 @@ namespace PE.COM.FSD.Web.pages
                     FlActivo = (int)Constantes.EstadoFlag.ACTIVO,
                     IdEntidad = int.Parse(ddlCodigoEntidad.SelectedValue),
                     IdPerfil = int.Parse(ddlCodigoPerfil.SelectedValue),
-                    UsuRegistro = UsuarioSession().DetCodigo
+                    UsuRegistro = UsuarioSession().DetCodigo,
+                    ContraseniaEmail = password
                 };
                 new UsuarioBusinessLogic().GuardarPersona(_usuario);
+                EnviarEmail(_usuario);
                 CargarLista();
                 Limpiar();
             }
@@ -111,6 +116,22 @@ namespace PE.COM.FSD.Web.pages
             {
                 Log.Error(ex);
             }
+        }
+
+        private void EnviarEmail(Usuario _usuario)
+        {
+            Comunicacion comunicacion = new Comunicacion();
+            comunicacion.CorreoUsuario = _usuario.DetEmail;
+            comunicacion.UserId = _usuario.DetCodigo;
+            comunicacion.NombreUsuario = _usuario.DetNombre;
+            comunicacion.Pass = _usuario.ContraseniaEmail;
+            if (_usuario.IdPerfil > 2)
+                comunicacion.Entidad = _entidadBusinessLogic.EntidadForID(_usuario.IdEntidad).DesTipo;
+            comunicacion.Perfil = _perfilBusinessLogic.PerfilForId(_usuario.IdPerfil).DesTipo;
+            comunicacion.IdPerfil = _usuario.IdPerfil;
+            comunicacion.Subject = Constantes.textoSubject;
+            Correo correo = new Correo();
+            correo.SendMail(comunicacion);
         }
 
         protected void GridUsuario_RowCommand(object sender, GridViewCommandEventArgs e)
