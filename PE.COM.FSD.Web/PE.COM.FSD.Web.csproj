@@ -108,9 +108,6 @@
     <Content Include="css\style.css" />
     <Content Include="fonts\Roboto\LICENSE.txt" />
     <Content Include="Global.asax" />
-    <Content Include="images\giz.jpg" />
-    <Content Include="images\logo-gafi.jpg" />
-    <Content Include="images\sbs.jpg" />
     <Content Include="images\sprites\blue.png" />
     <Content Include="images\sprites\dark.png" />
     <Content Include="images\sprites\flag.png" />
@@ -1036,7 +1033,6 @@
     <Content Include="NLog.config" />
     <Content Include="js\pages\perfil.js" />
     <Content Include="css\master.css" />
-    <Content Include="images\logo.png" />
     <Content Include="js\pages\master.js" />
     <Content Include="vendors\css\icheck\all.css" />
     <Content Include="vendors\css\icheck\flat\_all.css" />
@@ -1155,6 +1151,7 @@
     <Content Include="js\pages\usuario.js" />
     <Content Include="pages\preSeleccion.aspx" />
     <Content Include="pages\parametro.aspx" />
+    <Content Include="images\fsd.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="comun\PaginaBase.cs">
@@ -1162,10 +1159,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="pages\contactosEntidad.aspx.cs">
-      <DependentUpon>contactosEntidad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\contactosEntidad.aspx.designer.cs">
       <DependentUpon>contactosEntidad.aspx</DependentUpon>

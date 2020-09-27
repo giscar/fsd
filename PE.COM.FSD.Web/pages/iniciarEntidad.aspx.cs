@@ -29,6 +29,10 @@ namespace PE.COM.FSD.Web.pages
             {
                 try
                 {
+                    if (UsuarioSession() == null)
+                    {
+                        Response.Redirect(Constantes.PaginaInicioLogin);
+                    }
                     cargarLista();
                     cargarCombos();
                 }
