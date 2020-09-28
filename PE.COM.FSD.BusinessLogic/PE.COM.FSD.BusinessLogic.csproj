@@ -89,12 +89,13 @@
     <Compile Include="Common\MenuBusinessLogic.cs" />
     <Compile Include="Core\AccionBusinessLogic.cs" />
     <Compile Include="Core\ContactoBusinessLogic.cs" />
+    <Compile Include="Core\DeudaBusinessLogic.cs" />
+    <Compile Include="Core\EntidadBusinessLogic.cs" />
     <Compile Include="Core\IndicadorBusinessLogic.cs" />
     <Compile Include="Core\IndicadorEntidadBusinessLogic.cs" />
-    <Compile Include="Core\EntidadBusinessLogic.cs" />
+    <Compile Include="Core\OficinaBusinessLogic.cs" />
     <Compile Include="Core\UsuarioBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Core\OficinaBusinessLogic.cs" />
     <Compile Include="Core\ParametroBusinessLogic.cs" />
     <Compile Include="Core\ParametroValorBusinessLogic.cs" />
     <Compile Include="Common\UbigeoBusinessLogic.cs" />

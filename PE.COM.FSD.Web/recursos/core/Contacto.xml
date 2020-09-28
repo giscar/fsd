@@ -6,8 +6,8 @@
   <resultMaps>
     <resultMap id="rm_contacto" class="Contacto">
       <result property="Id"               column="id"></result>
-      <result property="IdTipo"        column="id_entidad"></result>
-      <result property="Entidad"        column="c_Des_razon"></result>s      
+      <result property="IdTipo"           column="id_entidad"></result>
+      <result property="Entidad"          column="c_Des_razon"></result>    
       <result property="IdCargo"          column="id_cargo"></result>
       <result property="Nombres"          column="c_nombres_contacto"></result>
       <result property="Apellidos"        column="c_apellidos_contacto"></result>
@@ -19,6 +19,7 @@
       <result property="FecCreacion"         column="d_fecha_creacion"></result>
       <result property="UsuarioModificacion" column="c_usuario_modificacion"></result>
       <result property="FecModificacion"     column="d_fecha_modificacion"></result>
+      <result property="Email"               column="c_email"></result>
     </resultMap>
   </resultMaps>
 
@@ -48,13 +49,14 @@
       c_apellidos_contacto = #Apellidos#,
       c_dni = #DNI#,
       c_nro_celular = #Celular#,
-      c_nro_telefono = #TelefonoFijo#
+      c_nro_telefono = #TelefonoFijo#,
+      c_email = #Email#
       where id = #Id#
     </update>
 
     <insert id="insert_contacto">
-      insert into dbo.contactos(id_entidad, id_cargo, c_nombres_contacto, c_apellidos_contacto, c_dni, c_nro_celular, c_nro_telefono, n_estado, c_usuario_creacion, d_fecha_creacion)
-      values(#IdTipo#,#IdCargo#,#Nombres#,#Apellidos#,#DNI#,#Celular#,#TelefonoFijo#,#Estado#,#UsuarioCreacion#,#FecCreacion#)
+      insert into dbo.contactos(id_entidad, id_cargo, c_nombres_contacto, c_apellidos_contacto, c_dni, c_nro_celular, c_nro_telefono, c_email,  n_estado, c_usuario_creacion, d_fecha_creacion)
+      values(#IdTipo#,#IdCargo#,#Nombres#,#Apellidos#,#DNI#,#Celular#,#TelefonoFijo#,#Email#,#Estado#,#UsuarioCreacion#,#FecCreacion#)
     </insert>
     
     <update id="inactive_contacto">
@@ -64,14 +66,6 @@
 	              d_fecha_modificacion =  #FecModificacion#
 	               where id = #Id#
      </update>
-        
-    <select id="select_contacto" resultMap="rm_contacto" >
-      SELECT c.* , p.c_nombre, e.c_Des_razon 
-      FROM DBO.contactos c
-      inner join dbo.entidad e on e.n_cod_entidad = c.id_Entidad
-      inner join parametros_valor p on c.id_cargo = p.id
-      where c.n_estado = 1
-    </select>
 
   </statements>
 </sqlMap>

@@ -46,7 +46,7 @@ namespace PE.COM.FSD.Web.pages
 
         private void cargarCombos()
         {
-            LlenarDropDownList(ddlEntidades, new EntidadBusinessLogic().ListarPorEntidad().OrderBy(x => x.DesTipo), "0", Constantes.selectLabelDefault);
+            LlenarDropDownList(ddlEntidades, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), "0", Constantes.selectLabelDefault);
             LlenarDropDownList(ddlClasificacionRiesgo, new ParametroValorBusinessLogic().buscarParametroValorForID((int)Constantes.Parametro.CLASIFICACION_RIESGO).OrderBy(x => x.Nombre), "0", Constantes.selectLabelDefault);
             LlenarDropDownList(ddlPorcentajeOficinas, new ParametroValorBusinessLogic().buscarParametroValorForID((int)Constantes.Parametro.PORCENTAJE_COINCIDENCIA_OFICINAS).OrderBy(x => x.Nombre), "0", Constantes.selectLabelDefault);
             LlenarDropDownList(ddlIndicadorDeudaFSD, new ParametroValorBusinessLogic().buscarParametroValorForID((int)Constantes.Parametro.DEUDA_FSD).OrderBy(x => x.Nombre), "0", Constantes.selectLabelDefault);

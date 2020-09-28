@@ -32,5 +32,14 @@ namespace PE.COM.FSD.BusinessLogic.Core
             return _oficinaDataAccess.buscarOficinaForID(id);
         }
 
+        public void ActualizarOficina(Oficina _oficina)
+        {
+            _oficinaDataAccess.ActualizarOficina(_oficina);
+        }
+
+        public void InactivarOficina(Oficina _oficina)
+        {
+            _oficinaDataAccess.InactivarOficina(_oficina);
+        }
     }
 }

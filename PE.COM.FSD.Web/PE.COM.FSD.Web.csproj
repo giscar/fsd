@@ -117,10 +117,12 @@
     <Content Include="images\sprites\yellow.png" />
     <Content Include="js\pages\contacto.js" />
     <Content Include="pages\contactosEntidad.aspx" />
+    <Content Include="pages\deudasEntidad.aspx" />
     <Content Include="pages\editarAccion.aspx" />
     <Content Include="pages\iniciarEntidad.aspx" />
     <Content Include="pages\listadoAcciones.aspx" />
     <Content Include="pages\login.aspx" />
+    <Content Include="pages\oficinasEntidad.aspx" />
     <Content Include="pages\perfil.aspx" />
     <Content Include="pages\rol.aspx" />
     <Content Include="pages\usuario.aspx" />
@@ -129,10 +131,12 @@
     <Content Include="recursos\common\Perfil.xml" />
     <Content Include="recursos\common\Menu.xml" />
     <Content Include="recursos\core\Contacto.xml" />
+    <Content Include="recursos\core\Deuda.xml" />
+    <Content Include="recursos\core\Entidad.xml" />
     <Content Include="recursos\core\Indicador.xml" />
     <Content Include="recursos\core\IndicadorEntidad.xml" />
     <Content Include="recursos\core\Accion.xml" />
-    <Content Include="recursos\core\Entidad.xml" />
+    <Content Include="recursos\core\Oficina.xml" />
     <Content Include="recursos\core\Usuario.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -1160,8 +1164,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="pages\contactosEntidad.aspx.cs">
+      <DependentUpon>contactosEntidad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\contactosEntidad.aspx.designer.cs">
       <DependentUpon>contactosEntidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\deudasEntidad.aspx.cs">
+      <DependentUpon>deudasEntidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\deudasEntidad.aspx.designer.cs">
+      <DependentUpon>deudasEntidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\editarAccion.aspx.cs">
       <DependentUpon>editarAccion.aspx</DependentUpon>
@@ -1172,7 +1185,6 @@
     </Compile>
     <Compile Include="pages\iniciarEntidad.aspx.cs">
       <DependentUpon>iniciarEntidad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\iniciarEntidad.aspx.designer.cs">
       <DependentUpon>iniciarEntidad.aspx</DependentUpon>
@@ -1190,6 +1202,12 @@
     </Compile>
     <Compile Include="pages\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\oficinasEntidad.aspx.cs">
+      <DependentUpon>oficinasEntidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\oficinasEntidad.aspx.designer.cs">
+      <DependentUpon>oficinasEntidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\perfil.aspx.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
@@ -1367,7 +1385,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="recursos\core\Oficina.xml" />
     <None Include="recursos\core\Parametro.xml" />
     <None Include="recursos\core\ParametroValor.xml" />
     <None Include="recursos\common\Ubigeo.xml" />

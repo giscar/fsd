@@ -11,7 +11,7 @@ namespace PE.COM.FSD.Web.pages
 {
 
 
-    public partial class contactosEntidad
+    public partial class deudasEntidad
     {
 
         /// <summary>
@@ -33,76 +33,40 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.WebControls.Button btnNuevoContacto;
 
         /// <summary>
-        /// Control txtContactoEntidad.
+        /// Control txtDeudaEntidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoEntidad;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDeudaEntidad;
 
         /// <summary>
-        /// Control ddlCargo.
+        /// Control ddlConcepto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCargo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlConcepto;
 
         /// <summary>
-        /// Control txtContactoNombres.
+        /// Control txtDeudaObservaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoNombres;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDeudaObservaciones;
 
         /// <summary>
-        /// Control txtContactoApellidos.
+        /// Control txtDeudaMonto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoApellidos;
-
-        /// <summary>
-        /// Control txtContactoDNI.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoDNI;
-
-        /// <summary>
-        /// Control txtContactoEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoEmail;
-
-        /// <summary>
-        /// Control txtContactoCelular.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoCelular;
-
-        /// <summary>
-        /// Control txtContactoTelefonoFijo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoTelefonoFijo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDeudaMonto;
 
         /// <summary>
         /// Control hdNuevaEntidad.
@@ -114,13 +78,13 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.WebControls.HiddenField hdNuevaEntidad;
 
         /// <summary>
-        /// Control btnGrabarContacto.
+        /// Control btnGrabarDeuda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGrabarContacto;
+        protected global::System.Web.UI.WebControls.Button btnGrabarDeuda;
 
         /// <summary>
         /// Control UpdatePanel1.
@@ -132,85 +96,49 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// Control GridViewContactos.
+        /// Control GridViewDeuda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewContactos;
+        protected global::System.Web.UI.WebControls.GridView GridViewDeuda;
 
         /// <summary>
-        /// Control txtEditarContactoEntidad.
+        /// Control txtEditarDeudaEntidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoEntidad;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarDeudaEntidad;
 
         /// <summary>
-        /// Control ddlEditarCargo.
+        /// Control ddlEditarConcepto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEditarCargo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEditarConcepto;
 
         /// <summary>
-        /// Control txtEditarContactoNombres.
+        /// Control txtEditarDuedaObservaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoNombres;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarDuedaObservaciones;
 
         /// <summary>
-        /// Control txtEditarContactoApellidos.
+        /// Control txtEditarDeudaMonto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoApellidos;
-
-        /// <summary>
-        /// Control txtEditarContactoDNI.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoDNI;
-
-        /// <summary>
-        /// Control txtEditarContactoEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoEmail;
-
-        /// <summary>
-        /// Control txtEditarContactoCelular.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoCelular;
-
-        /// <summary>
-        /// Control txtEditarContactoTelefonoFijo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoTelefonoFijo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarDeudaMonto;
 
         /// <summary>
         /// Control hdEditarEntidad.
@@ -222,13 +150,13 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.WebControls.HiddenField hdEditarEntidad;
 
         /// <summary>
-        /// Control hdInactivarContacto.
+        /// Control hdInactivarDeuda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdInactivarContacto;
+        protected global::System.Web.UI.WebControls.HiddenField hdInactivarDeuda;
 
         /// <summary>
         /// Control btnSeleccionar.

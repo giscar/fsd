@@ -4,24 +4,21 @@ using System;
 
 namespace PE.COM.FSD.Entity.Core
 {
-    public class Contacto
+    public class Deuda
     {
         public int Id { get; set; }
         public int IdTipo { get; set; }
         public string Entidad { get; set; }
-        public int IdCargo { get; set; }
-        public string Nombres { get; set; }
-        public string Apellidos { get; set; }
-        public string DNI { get; set; }
-        public string Celular { get; set; }
-        public string TelefonoFijo { get; set; }
-        public string Email { get; set; }
+        public int IdConcepto { get; set; }
+        public string Concepto { get; set; }
+        public string Observacion { get; set; }
+        public int Monto { get; set; }
         public int Estado { get; set; }
         public string UsuarioCreacion { get; set; }
         public DateTime FecCreacion { get; set; }
         public string UsuarioModificacion { get; set; }
         public DateTime FecModificacion { get; set; }
-
     }
 }
+
 #pragma warning restore 1591

@@ -18,7 +18,9 @@ namespace PE.COM.FSD.Web.util
         {
             CLASIFICACION_RIESGO = 1,
             PORCENTAJE_COINCIDENCIA_OFICINAS = 2,
-            DEUDA_FSD = 3
+            DEUDA_FSD = 3,
+            CARGO = 6,
+            CONCEPTO_DE_DEUDA = 7
         }
 
         public const String PaginaInicioLogin = "../pages/login.aspx";

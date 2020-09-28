@@ -16,15 +16,19 @@
       <result property="Estado" column="n_estado"></result>
       <result property="UsuarioCreacion" column="c_usuario_creacion"></result>
       <result property="FecCreacion" column="d_fecha_creacion"></result>
+      <result property="UsuarioModificacion" column="c_usuario_modificacion"></result>
+      <result property="FecModificacion" column="d_fecha_modificacion"></result>      
       <result property="Distrito" column="C_DESCDSTRO"></result>
       <result property="Provincia" column="C_DESCPROV"></result>
       <result property="Departamento" column="C_DESCDPTO"></result>
+      <result property="IdTipoOficina" column="id_tipo_oficina"></result>
+      <result property="TipoOficina" column="TipoOficina"></result>
     </resultMap>
   </resultMaps>
 
   <statements>
     <select id="select_oficina" resultMap="rm_oficina" >
-      SELECT o.*, d.C_DESCDSTRO , p.C_DESCPROV, de.C_DESCDPTO
+      SELECT o.*, d.C_DESCDSTRO , p.C_DESCPROV, de.C_DESCDPTO, tipooficina.c_nombre TipoOficina
       FROM oficinas o
       inner join ubigeo_dstro d on o.id_departamento = d.c_id_dpto
       and o.id_provincia = d.c_id_prov
@@ -32,16 +36,30 @@
       inner join ubigeo_prov p on o.id_departamento = p.c_id_dpto
       and o.id_provincia = p.C_ID_PROV
       inner join UBIGEO_DPTO de on o.id_departamento = de.c_id_dpto
+      inner join dbo.parametros_valor tipooficina on tipooficina.id_parametros = 5 and tipooficina.id = o.id_tipo_oficina
       where id_entidad = #IdTipo#
+      and o.n_Estado = 1
+      order by o.c_nombre_oficina
     </select>
 
     <select id="select_oficina_id" resultMap="rm_oficina" >
-      SELECT * FROM oficinas where id = #Id#
+      SELECT o.*, d.C_DESCDSTRO , p.C_DESCPROV, de.C_DESCDPTO
+      , tipooficina.c_nombre TipoOficina
+      FROM oficinas o
+      inner join ubigeo_dstro d on o.id_departamento = d.c_id_dpto
+      and o.id_provincia = d.c_id_prov
+      and o.id_distrito = d.c_id_dstro
+      inner join ubigeo_prov p on o.id_departamento = p.c_id_dpto
+      and o.id_provincia = p.C_ID_PROV
+      inner join UBIGEO_DPTO de on o.id_departamento = de.c_id_dpto
+      inner join dbo.parametros_valor tipooficina on tipooficina.id_parametros = 5 and tipooficina.id = o.id_tipo_oficina
+      where o.id = #Id#
     </select>
 
     <insert id="insert_oficina">
       INSERT INTO oficinas (
       id_entidad,
+      id_tipo_oficina,
       c_nombre_oficina,
       c_direccion,
       c_codigo_postal,
@@ -53,6 +71,7 @@
       d_fecha_creacion)
       VALUES
       (#IdTipo#,
+      #IdTipoOficina#,
       #NombreOficina#,
       #Direccion#,
       #CodigoPostal#,
@@ -64,5 +83,26 @@
       #FecCreacion#
       )
     </insert>
+
+    <update id="update_oficina">
+	    update oficinas 
+	    set c_nombre_oficina = #NombreOficina#,
+      c_direccion = #Direccion#,
+	    c_codigo_postal = #CodigoPostal#,
+	    id_departamento = #IdDpto#,
+	    id_provincia = #IdProv#,
+	    id_distrito =  #IdDstro#,
+	    d_fecha_modificacion = getdate(),
+      c_usuario_modificacion = #UsuarioModificacion#
+	    where id = #Id#
+    </update>
+
+    <update id="inactive_oficina">
+	    update oficinas  
+	    set n_estado = #Estado#,
+	    d_fecha_modificacion = getdate(),
+      c_usuario_modificacion = #UsuarioModificacion#
+	    where id = #Id#
+    </update>
   </statements>
 </sqlMap>

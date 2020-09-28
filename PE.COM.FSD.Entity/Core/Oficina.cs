@@ -22,6 +22,8 @@ namespace PE.COM.FSD.Entity.Core
         public string Distrito { get; set; }
         public string Provincia { get; set; }
         public string Departamento { get; set; }
+        public string TipoOficina { get; set; }
+        public int IdTipoOficina { get; set; }
     }
 }
 #pragma warning restore 1591

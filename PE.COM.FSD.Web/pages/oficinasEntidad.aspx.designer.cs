@@ -11,7 +11,7 @@ namespace PE.COM.FSD.Web.pages
 {
 
 
-    public partial class contactosEntidad
+    public partial class OficinasEntidad
     {
 
         /// <summary>
@@ -33,85 +33,94 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.WebControls.Button btnNuevoContacto;
 
         /// <summary>
-        /// Control txtContactoEntidad.
+        /// Control txtOficinasEntidadFinanciera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoEntidad;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtOficinasEntidadFinanciera;
 
         /// <summary>
-        /// Control ddlCargo.
+        /// Control txtOficinasRazonSocial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCargo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtOficinasRazonSocial;
 
         /// <summary>
-        /// Control txtContactoNombres.
+        /// Control ddlTipoOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoNombres;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTipoOficina;
 
         /// <summary>
-        /// Control txtContactoApellidos.
+        /// Control txtOficinaCodigoPostals.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoApellidos;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtOficinaCodigoPostals;
 
         /// <summary>
-        /// Control txtContactoDNI.
+        /// Control ddlOficinaDepartamento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoDNI;
+        protected global::System.Web.UI.WebControls.DropDownList ddlOficinaDepartamento;
 
         /// <summary>
-        /// Control txtContactoEmail.
+        /// Control upProvinciaOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoEmail;
+        protected global::System.Web.UI.UpdatePanel upProvinciaOficina;
 
         /// <summary>
-        /// Control txtContactoCelular.
+        /// Control ddlOficinaProvincia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoCelular;
+        protected global::System.Web.UI.WebControls.DropDownList ddlOficinaProvincia;
 
         /// <summary>
-        /// Control txtContactoTelefonoFijo.
+        /// Control upDistritoOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtContactoTelefonoFijo;
+        protected global::System.Web.UI.UpdatePanel upDistritoOficina;
 
         /// <summary>
-        /// Control hdNuevaEntidad.
+        /// Control ddlOficinaDistrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdNuevaEntidad;
+        protected global::System.Web.UI.WebControls.DropDownList ddlOficinaDistrito;
+
+        /// <summary>
+        /// Control txtOficinaDireccion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtOficinaDireccion;
 
         /// <summary>
         /// Control btnGrabarContacto.
@@ -123,94 +132,112 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.WebControls.Button btnGrabarContacto;
 
         /// <summary>
-        /// Control UpdatePanel1.
+        /// Control upModal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.UpdatePanel upModal;
 
         /// <summary>
-        /// Control GridViewContactos.
+        /// Control GridViewOficinas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewContactos;
+        protected global::System.Web.UI.WebControls.GridView GridViewOficinas;
 
         /// <summary>
-        /// Control txtEditarContactoEntidad.
+        /// Control txtEditarOficinasEntidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoEntidad;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarOficinasEntidad;
 
         /// <summary>
-        /// Control ddlEditarCargo.
+        /// Control txtEditarOficinasRazonSocial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEditarCargo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarOficinasRazonSocial;
 
         /// <summary>
-        /// Control txtEditarContactoNombres.
+        /// Control ddlEditarTipoOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoNombres;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEditarTipoOficina;
 
         /// <summary>
-        /// Control txtEditarContactoApellidos.
+        /// Control txtEditarOficinaCodigoPostal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoApellidos;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarOficinaCodigoPostal;
 
         /// <summary>
-        /// Control txtEditarContactoDNI.
+        /// Control ddlEditarOficinaDepartamento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoDNI;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEditarOficinaDepartamento;
 
         /// <summary>
-        /// Control txtEditarContactoEmail.
+        /// Control upEditarProvinciaOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoEmail;
+        protected global::System.Web.UI.UpdatePanel upEditarProvinciaOficina;
 
         /// <summary>
-        /// Control txtEditarContactoCelular.
+        /// Control ddlEditarOficinaProvincia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoCelular;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEditarOficinaProvincia;
 
         /// <summary>
-        /// Control txtEditarContactoTelefonoFijo.
+        /// Control upEditarDistritoOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarContactoTelefonoFijo;
+        protected global::System.Web.UI.UpdatePanel upEditarDistritoOficina;
+
+        /// <summary>
+        /// Control ddlEditarOficinaDistrito.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlEditarOficinaDistrito;
+
+        /// <summary>
+        /// Control txtEditarOficinaDireccion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEditarOficinaDireccion;
 
         /// <summary>
         /// Control hdEditarEntidad.
@@ -222,13 +249,13 @@ namespace PE.COM.FSD.Web.pages
         protected global::System.Web.UI.WebControls.HiddenField hdEditarEntidad;
 
         /// <summary>
-        /// Control hdInactivarContacto.
+        /// Control hdInactivarOficina.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdInactivarContacto;
+        protected global::System.Web.UI.WebControls.HiddenField hdInactivarOficina;
 
         /// <summary>
         /// Control btnSeleccionar.

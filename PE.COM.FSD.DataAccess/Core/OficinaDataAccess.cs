@@ -23,5 +23,15 @@ namespace PE.COM.FSD.DataAccess.Core
         {
             return (BaseService<Oficina>.QueryForObject("select_oficina_id", id));
         }
+
+        public void ActualizarOficina(Oficina _oficina)
+        {
+            MapperPro.Instance().Update("update_oficina", _oficina);
+        }
+
+        public void InactivarOficina(Oficina _oficina)
+        {
+            MapperPro.Instance().Update("inactive_oficina", _oficina);
+        }
     }
 }

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="EntidadMap" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="Deuda" type="PE.COM.FSD.Entity.Core.Deuda,PE.COM.FSD.Entity" />
+  </alias>
+  <resultMaps>
+    <resultMap id="rm_deuda" class="Deuda">
+      <result property="Id"                  column="id"></result>
+      <result property="IdTipo"              column="id_entidad"></result>
+      <result property="Entidad"             column="c_Des_razon"></result>
+      <result property="IdConcepto"          column="id_concepto"></result>
+      <result property="Concepto"          column="concepto"></result>
+      <result property="Observacion"         column="c_observacion"></result>
+      <result property="Monto"               column="c_monto"></result>
+      <result property="Estado"              column="n_estado"></result>
+      <result property="UsuarioCreacion"     column="c_usuario_creacion"></result>
+      <result property="FecCreacion"         column="d_fecha_creacion"></result>
+      <result property="UsuarioModificacion" column="c_usuario_modificacion"></result>
+      <result property="FecModificacion"     column="d_fecha_modificacion"></result>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id="select_deuda_porEntidad" resultMap="rm_deuda" >
+      SELECT d.* , p.c_nombre concepto, e.c_Des_razon
+      FROM DBO.deudas d
+      inner join dbo.entidad e on e.n_cod_entidad = d.id_Entidad
+      inner join parametros_valor p on d.id_concepto = p.id
+      where d.n_estado = 1
+      and d.id_entidad =  #Id#
+    </select>
+
+    <select id="select_deuda_id" resultMap="rm_deuda" >
+      SELECT d.* , p.c_nombre concepto, e.c_Des_razon
+      FROM DBO.deudas d
+      inner join dbo.entidad e on e.n_cod_entidad = d.id_Entidad
+      inner join parametros_valor p on d.id_concepto = p.id
+      where d.n_estado = 1
+      and d.id =  #Id#
+    </select>
+
+    <update id="update_deuda">
+      update dbo.deudas set
+      id_concepto = #IdConcepto#,
+      c_observacion = #Observacion#,
+      c_monto = #Monto#,
+      d_fecha_modificacion = #FecModificacion#,
+      c_usuario_modificacion = #UsuarioModificacion#
+      where id = #Id#
+    </update>
+
+    <insert id="insert_deuda">
+      insert into deudas(id_entidad, id_concepto, c_observacion, c_monto, n_estado , c_usuario_creacion, d_fecha_creacion)
+      values(#IdTipo#, #IdConcepto#, #Observacion# , #Monto# , #Estado#, #UsuarioCreacion#, #FecCreacion#);
+    </insert>
+
+    <update id="inactive_deuda">
+      update dbo.deudas
+      set n_estado = #Estado#,
+      c_usuario_modificacion = #UsuarioModificacion#,
+      d_fecha_modificacion =  #FecModificacion#
+      where id = #Id#
+    </update>
+
+  </statements>
+</sqlMap>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
 using NLog;
+//using SBS.UIF.BUZ.Web.util;
 using PE.COM.FSD.BusinessLogic.Core;
 using PE.COM.FSD.BusinessLogic.Common;
 using PE.COM.FSD.Entity.Core;
@@ -29,10 +30,6 @@ namespace PE.COM.FSD.Web.pages
             {
                 try
                 {
-                    if (UsuarioSession() == null)
-                    {
-                        Response.Redirect(Constantes.PaginaInicioLogin);
-                    }
                     cargarLista();
                     cargarCombos();
                 }
@@ -89,7 +86,7 @@ namespace PE.COM.FSD.Web.pages
 
         private void cargarLista()
         {
-            listadoEntidades = entidadBusinessLogic.ListarPorEntidad();
+            listadoEntidades = entidadBusinessLogic.listarPorEntidad();
             GridView2.DataSource = listadoEntidades;
             GridView2.DataBind();
         }
@@ -184,19 +181,19 @@ namespace PE.COM.FSD.Web.pages
                 Usuario usuarioSession = (Usuario)HttpContext.Current.Session["Usuario"];
                 Entidad entidad = new Entidad
                 {
-                    IdTipo      = Convert.ToInt32(hdEntidadAgenciaSel.Value), 
-                    DesTipo     = txtEntidadEditar.Value,
-                    CodRuc      = txtRUCEditar.Value,
-                    Direccion   = txtDireccionEditar.Value,
+                    IdTipo = Convert.ToInt32(hdEntidadAgenciaSel.Value),
+                    DesTipo = txtEntidadEditar.Value,
+                    CodRuc = txtRUCEditar.Value,
+                    Direccion = txtDireccionEditar.Value,
                     CodigoPostal = txtCodigoPostalEditar.Value,
-                    Latitud      = txtLatitudEditar.Value,
-                    Longitud     = txtLongitudEditar.Value,
-                    IdDstro      = ddlDistritoEditar.SelectedValue,
-                    IdProv       = ddlProvinciaEditar.SelectedValue,
-                    IdDpto       = ddlDepartamentoEditar.SelectedValue,
-                    FecModificacion     = DateTime.Today,
+                    Latitud = txtLatitudEditar.Value,
+                    Longitud = txtLongitudEditar.Value,
+                    IdDstro = ddlDistritoEditar.SelectedValue,
+                    IdProv = ddlProvinciaEditar.SelectedValue,
+                    IdDpto = ddlDepartamentoEditar.SelectedValue,
+                    FecModificacion = DateTime.Today,
                     UsuarioModificacion = usuarioSession.DetCodigo
-                 
+
                 };
                 entidadBusinessLogic.ActualizarEntidad(entidad);
                 cargarLista();
@@ -235,7 +232,7 @@ namespace PE.COM.FSD.Web.pages
                 UsuarioCreacion = usuarioSession.DetCodigo,
                 Estado = (int)Constantes.EstadoFlag.ACTIVO
             };
-            entidadBusinessLogic.GuardarEntidad(entidad);
+            entidadBusinessLogic.guardarEntidad(entidad);
             cargarLista();
             limpiar();
         }
@@ -292,9 +289,20 @@ namespace PE.COM.FSD.Web.pages
             int idEntidad = int.Parse(e.CommandArgument.ToString());
 
             Entidad entidad = new Entidad();
-            entidad = entidadBusinessLogic.BuscarEntidadForID(idEntidad);
+            entidad = entidadBusinessLogic.buscarEntidadForID(idEntidad);
 
-            if(e.CommandName == "btn_contactos")
+
+            if (e.CommandName == "btn_oficinas")
+            {
+                Response.Redirect("oficinasEntidad.aspx?id=" + idEntidad);
+            }
+
+            if (e.CommandName == "btn_deudas")
+            {
+                Response.Redirect("deudasEntidad.aspx?id=" + idEntidad);
+            }
+
+            if (e.CommandName == "btn_contactos")
             {
                 Response.Redirect("contactosEntidad.aspx?id=" + idEntidad);
             }
@@ -354,7 +362,7 @@ namespace PE.COM.FSD.Web.pages
         //    comunicacion.NombreUsuario = "Gerardo";
         //    comunicacion.To = "gerlmp@gmail.com";
         //    comunicacion.Subject = "Prueba de correo";
-            
+
         //    Correo correo = new Correo();
         //    correo.SendMail(comunicacion);
 

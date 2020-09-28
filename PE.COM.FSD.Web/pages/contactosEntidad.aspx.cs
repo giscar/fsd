@@ -10,6 +10,7 @@ using PE.COM.FSD.Entity.Common;
 using PE.COM.FSD.Web.util;
 using PE.COM.FSD.BusinessLogic.Core;
 using NLog;
+//using SBS.UIF.BUZ.Web.util;
 
 namespace PE.COM.FSD.Web.pages
 {
@@ -55,7 +56,7 @@ namespace PE.COM.FSD.Web.pages
         protected void cargaInformacionEntidad(int idEntidad)
         {
             Entidad entidad = new Entidad();
-            entidad = entidadBusinessLogic.BuscarEntidadForID(idEntidad);
+            entidad = entidadBusinessLogic.buscarEntidadForID(idEntidad);
             txtContactoEntidad.Value = entidad.DesTipo;
         }
 
@@ -117,6 +118,7 @@ namespace PE.COM.FSD.Web.pages
                     txtEditarContactoDNI.Value = contactoActualizado.DNI;
                     txtEditarContactoCelular.Value = contactoActualizado.Celular;
                     txtEditarContactoTelefonoFijo.Value = contactoActualizado.TelefonoFijo;
+                    txtEditarContactoEmail.Value = contactoActualizado.Email;
                     hdEditarEntidad.Value = contactoActualizado.IdTipo.ToString();
                     System.Text.StringBuilder sb = new System.Text.StringBuilder();
                     sb.Append(@"<script type='text/javascript'>");
@@ -157,6 +159,7 @@ namespace PE.COM.FSD.Web.pages
                     DNI = txtEditarContactoDNI.Value,
                     Celular = txtEditarContactoCelular.Value,
                     TelefonoFijo = txtEditarContactoTelefonoFijo.Value,
+                    Email = txtEditarContactoEmail.Value,
                     UsuarioModificacion = UsuarioSession().DetCodigo,
                     FecModificacion = DateTime.Now
                 };
@@ -228,6 +231,7 @@ namespace PE.COM.FSD.Web.pages
                     DNI = txtContactoDNI.Value,
                     Celular = txtContactoCelular.Value,
                     TelefonoFijo = txtContactoTelefonoFijo.Value,
+                    Email = txtContactoEmail.Value,
                     Estado = (int)Constantes.EstadoFlag.ACTIVO,
                     UsuarioCreacion = usuarioSession.DetCodigo,
                     FecCreacion = DateTime.Today

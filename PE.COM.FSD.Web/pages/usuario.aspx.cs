@@ -54,7 +54,7 @@ namespace PE.COM.FSD.Web.pages
         {
             try
             {
-                LlenarDropDownList(ddlCodigoEntidad, new EntidadBusinessLogic().ListarPorEntidad().OrderBy(x => x.DesTipo), "0", "Seleccione");
+                LlenarDropDownList(ddlCodigoEntidad, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), "0", "Seleccione");
                 LlenarDropDownList(ddlCodigoPerfil, new PerfilBusinessLogic().ListarPorPerfil().OrderBy(x => x.DesTipo), "0", "Seleccione");
             }
             catch (Exception ex)
@@ -126,7 +126,7 @@ namespace PE.COM.FSD.Web.pages
             comunicacion.NombreUsuario = _usuario.DetNombre;
             comunicacion.Pass = _usuario.ContraseniaEmail;
             if (_usuario.IdPerfil > 2)
-                comunicacion.Entidad = _entidadBusinessLogic.EntidadForID(_usuario.IdEntidad).DesTipo;
+                comunicacion.Entidad = _entidadBusinessLogic.buscarEntidadForID(_usuario.IdEntidad).DesTipo;
             comunicacion.Perfil = _perfilBusinessLogic.PerfilForId(_usuario.IdPerfil).DesTipo;
             comunicacion.IdPerfil = _usuario.IdPerfil;
             comunicacion.Subject = Constantes.textoSubject;
@@ -257,7 +257,7 @@ namespace PE.COM.FSD.Web.pages
         {
             try
             {
-                LlenarDropDownList(ddlCodigoEntidadEdit, new EntidadBusinessLogic().ListarPorEntidad().OrderBy(x => x.DesTipo), Constantes.selectValueDefault, Constantes.selectLabelDefault);
+                LlenarDropDownList(ddlCodigoEntidadEdit, new EntidadBusinessLogic().listarPorEntidad().OrderBy(x => x.DesTipo), Constantes.selectValueDefault, Constantes.selectLabelDefault);
                 LlenarDropDownList(ddlCodigoPerfilEdit, new PerfilBusinessLogic().ListarPorPerfil().OrderBy(x => x.DesTipo), Constantes.selectValueDefault, Constantes.selectLabelDefault);
             }
             catch (Exception ex)
@@ -305,7 +305,7 @@ namespace PE.COM.FSD.Web.pages
                     UsuarioCreacion = UsuarioSession().DetCodigo,
                     FlActivo = (int)Constantes.EstadoFlag.ACTIVO
                 };
-                _entidadBusinessLogic.GuardarEntidad(entidad);
+                _entidadBusinessLogic.guardarEntidad(entidad);
             }
             catch (Exception ex)
             {
