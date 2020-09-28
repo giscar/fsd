@@ -42,5 +42,10 @@ namespace PE.COM.FSD.BusinessLogic.Core
         {
             _contactoDataAccess.InactivarContacto(_contacto);
         }
+
+        public List<Contacto> ListarContacto()
+        {
+            return (_contactoDataAccess.ListarContacto());
+        }
     }
 }

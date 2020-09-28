@@ -14,6 +14,7 @@ namespace PE.COM.FSD.Web.pages
     public partial class preSeleccion : PaginaBase
     {
         PreSeleccionBusinessLogic preSeleccionBusinessLogic = new PreSeleccionBusinessLogic();
+        ContactoBusinessLogic contactoBusinessLogic = new ContactoBusinessLogic();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -73,6 +74,10 @@ namespace PE.COM.FSD.Web.pages
             List<PreSeleccion> preSelecciones = preSeleccionBusinessLogic.buscarPreSeleccion(preSeleccion);
             GridView1.DataSource = preSelecciones;
             GridView1.DataBind();
+            //CARGAR CONTACTOS
+            List<Contacto> contactos = contactoBusinessLogic.ListarContacto();
+            GridView2.DataSource = contactos;
+            GridView2.DataBind();
             mostrarOcultar(true);
         }
 
@@ -104,6 +109,19 @@ namespace PE.COM.FSD.Web.pages
         protected void ddlEntidades_Change(object sender, EventArgs e)
         {
             //SELECCIONAR VALORES DE ENTIDADES
+        }
+
+        protected void Submit_enviar_invitaciones(object sender, EventArgs e)
+        {
+            Contacto contacto = new Contacto
+            {
+                Entidad = "TODAS",
+              
+            };
+            //parametroBusinessLogic.guardarParametro(parametro);
+            //Limpiar();
+            //cargarCombos();
+            //AlertDanger("Se realizaron los cambios");
         }
     }
 }

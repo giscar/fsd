@@ -95,7 +95,7 @@
                 </div>
                 <div class="col-sm-4">                   
                     <asp:Button class="btn btn-success mr-2" ID="btnEnviarInvitaciones" runat="server" Text="Enviar Invitaciones"
-                                OnClick="Submit_EnviarInvitaciones" />
+                                data-toggle="modal" data-target="#contactosModal" OnClientClick="return false;" />
                     <i class="mdi mdi-email"></i>
                 </div>
             </div>
@@ -123,35 +123,40 @@
                     <asp:BoundField ItemStyle-Width="20%" DataField="DeudaFSD" HeaderText="Deudas con el FSD" />
                 </Columns>
             </asp:GridView>
-            <!-- <table id="order-listing" class="table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Entidad</th>
-                        <th>Clasificación de riesgo</th>
-                        <th>% de Oficinas</th>
-                        <th>Deudas con el FSD</th>
-                        <th>Estado</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Banco de Comercio</td>
-                        <td>A</td>
-                        <td>80%</td>
-                        <td>NO</td>
-                        <td>
-                          <label class="badge badge-success">APTO</label>
-                        </td>
-                        <td>
-                          <button class="btn btn-outline-primary">VER DETALLES</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>-->
         </div>
     </div>
-    
+    <!-- Modal Enviar Invitaciones -->
+    <div class="modal fade" id="contactosModal" tabindex="-1" role="dialog" aria-labelledby="contactosModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactosModalLabel">Enviar Invitaciones</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 table-responsive">
+                        <asp:GridView ID="GridView2" runat="server" AllowPaging="true"
+                              CssClass="table table-hover table-striped table-bordered" AutoGenerateColumns="false" >
+                            <Columns>
+                                <asp:TemplateField ItemStyle-Width="10%" HeaderText="Nro">
+                                    <ItemTemplate>
+                                        <%# Container.DataItemIndex + 1 %>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:BoundField ItemStyle-Width="50%" DataField="Entidad" HeaderText="Entidad" />
+                                <asp:BoundField ItemStyle-Width="20%" DataField="Nombres" HeaderText="Nombres" />
+                                <asp:BoundField ItemStyle-Width="20%" DataField="Apellidos" HeaderText="Apellidos" />
+                            </Columns>
+                        </asp:GridView>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <asp:Button class="btn btn-lg btn-primary" ID="btnEnviarCorreos" runat="server" Text="Enviar" OnClick="Submit_enviar_invitaciones" />
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>

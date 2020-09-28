@@ -36,5 +36,9 @@ namespace PE.COM.FSD.Web.pages {
 		protected System.Web.UI.HtmlControls.HtmlGenericControl idDivListaEntidades;
 		
 		protected System.Web.UI.WebControls.GridView GridView1;
+		
+		protected System.Web.UI.WebControls.GridView GridView2;
+		
+		protected System.Web.UI.WebControls.Button btnEnviarCorreos;
 	}
 }

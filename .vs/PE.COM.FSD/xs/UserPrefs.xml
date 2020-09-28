@@ -1,41 +1,35 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{5992A5C6-F72E-4EF3-8BAE-A599DB5A6740}|">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{5992A5C6-F72E-4EF3-8BAE-A599DB5A6740}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PE.COM.FSD.Web/pages/preSeleccion.aspx.cs">
     <Files>
-      <File FileName="PE.COM.FSD.Web/pages/login.aspx" Line="30" Column="41" />
+      <File FileName="PE.COM.FSD.Web/pages/preSeleccion.aspx" Line="97" Column="21" />
+      <File FileName="PE.COM.FSD.Web/pages/preSeleccion.aspx.cs" Line="17" Column="38" />
+      <File FileName="PE.COM.FSD.Web/pages/parametro.aspx" Line="34" Column="13" />
+      <File FileName="PE.COM.FSD.Web/pages/parametro.aspx.cs" Line="212" Column="9" />
+      <File FileName="PE.COM.FSD.Entity/Core/Contacto.cs" Line="14" Column="32" />
+      <File FileName="PE.COM.FSD.BusinessLogic/Core/ContactoBusinessLogic.cs" Line="46" Column="47" />
+      <File FileName="PE.COM.FSD.DataAccess/Core/ContactoDataAccess.cs" Line="37" Column="1" />
+      <File FileName="PE.COM.FSD.Web/recursos/core/Contacto.xml" Line="68" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PE.COM.FSD" expanded="True" selected="True">
+          <Node name="PE.COM.FSD" expanded="True">
             <Node name="PE.COM.FSD.BusinessLogic" expanded="True">
-              <Node name="Common" expanded="True" />
               <Node name="Core" expanded="True" />
             </Node>
             <Node name="PE.COM.FSD.DataAccess" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Core" expanded="True" />
-            </Node>
-            <Node name="PE.COM.FSD.Entity" expanded="True">
-              <Node name="Common" expanded="True" />
               <Node name="Core" expanded="True" />
             </Node>
             <Node name="PE.COM.FSD.Web" expanded="True">
-              <Node name="images" expanded="True" />
               <Node name="pages" expanded="True">
-                <Node name="contactosEntidad.aspx" expanded="True" />
-                <Node name="iniciarEntidad.aspx" expanded="True" />
-                <Node name="login.aspx" expanded="True" />
-                <Node name="perfil.aspx" expanded="True" />
-                <Node name="plantilla.Master" expanded="True" />
-                <Node name="preSeleccion.aspx" expanded="True" />
-                <Node name="rol.aspx" expanded="True" />
-                <Node name="usuario.aspx" expanded="True" />
+                <Node name="parametro.aspx" expanded="True" />
+                <Node name="preSeleccion.aspx" expanded="True">
+                  <Node name="preSeleccion.aspx.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="recursos" expanded="True">
-                <Node name="common" expanded="True" />
                 <Node name="core" expanded="True" />
               </Node>
-              <Node name="util" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -46,9 +40,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/carlosleon/requerimientos/2020/fsd/PE.COM.FSD.Web/util/Correo.cs" relfile="PE.COM.FSD.Web/util/Correo.cs" line="17" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -34,5 +34,10 @@ namespace PE.COM.FSD.DataAccess.Core
         {
             MapperPro.Instance().Update("inactive_contacto", _contacto);
         }
+
+        public List<Contacto> ListarContacto()
+        {
+            return (BaseService<Contacto>.QueryForList("select_contacto", null));
+        }
     }
 }
