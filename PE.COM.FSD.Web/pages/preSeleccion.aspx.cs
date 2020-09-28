@@ -15,6 +15,7 @@ namespace PE.COM.FSD.Web.pages
     {
         PreSeleccionBusinessLogic preSeleccionBusinessLogic = new PreSeleccionBusinessLogic();
         ContactoBusinessLogic contactoBusinessLogic = new ContactoBusinessLogic();
+        List<Contacto> contactos;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -75,7 +76,15 @@ namespace PE.COM.FSD.Web.pages
             GridView1.DataSource = preSelecciones;
             GridView1.DataBind();
             //CARGAR CONTACTOS
-            List<Contacto> contactos = contactoBusinessLogic.ListarContacto();
+            contactos = new List<Contacto>();
+            foreach (PreSeleccion item in preSelecciones)
+            {
+                List<Contacto> contactosTemp = contactoBusinessLogic.listarContactoPorEntidad(item.IdEntidad);
+                foreach (Contacto contacto in contactosTemp)
+                {
+                    contactos.Add(contacto);
+                }
+            }
             GridView2.DataSource = contactos;
             GridView2.DataBind();
             mostrarOcultar(true);
