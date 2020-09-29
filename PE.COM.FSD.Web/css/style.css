@@ -21461,12 +21461,14 @@ div.tagsinput {
 /* Auth */
 .auth {
   min-height: 100vh; }
-  .auth.auth-bg-1 {
-    background: url("https://placehold.it/1366x780");
-    background-size: cover; }
-  .auth.register-bg-1 {
-    background: url("https://placehold.it/1366x780") center center no-repeat;
-    background-size: cover; }
+    .auth.auth-bg-1 {
+        background-color: #D5D8DC;
+        background-size: cover;
+    }
+    .auth.register-bg-1 {
+        background: #D5D8DC center center no-repeat;
+        background-size: cover;
+    }
   .auth.theme-one .auto-form-wrapper {
     background: #fff;
     padding: 40px 40px 10px;

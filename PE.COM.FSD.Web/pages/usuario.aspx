@@ -179,27 +179,24 @@
                             </div>
                         </div>
                         <br />
-                        <asp:GridView ID="GridView1" runat="server" AllowPaging="true" Class="table table-hover table-striped table-bordered" PageSize="20" AutoGenerateColumns="false" OnRowCommand="GridUsuario_RowCommand">
+                        <asp:GridView ID="GridView1" runat="server" AllowPaging="true" class="table table-striped table-bordered" PageSize="20" AutoGenerateColumns="false" OnRowCommand="GridUsuario_RowCommand">
                             <Columns>
-                                <asp:TemplateField>
-                                    <ItemTemplate>
-                                        <%# Container.DataItemIndex + 1 %>
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                                <asp:BoundField ItemStyle-Width="15%" DataField="DetCodigo" HeaderText="Usuario" />
+                                
+                                <asp:BoundField Class="algo" ItemStyle-Width="30%"  DataField="DetCodigo" HeaderText="Usuario" />
                                 <asp:BoundField ItemStyle-Width="30%" DataField="DetNombre" HeaderText="Nombre completo" />
                                 <asp:BoundField ItemStyle-Width="30%" DataField="RazonSocialEntidad" HeaderText="Entidad" />
-                                <asp:BoundField ItemStyle-Width="15%" DataField="FecRegistro" HeaderText="Fecha de registro" />
-                                <asp:BoundField ItemStyle-Width="15%" DataField="NombrePerfil" HeaderText="Perfil" />
-                                <asp:TemplateField HeaderText="Documento">
+                                <asp:BoundField ItemStyle-Width="30%" DataField="NombrePerfil" HeaderText="Perfil" />
+                                
+                                <asp:TemplateField HeaderText="Acciones">
                                     <ItemTemplate>
-                                        <asp:LinkButton runat="server" CommandArgument='<%# Eval("CodDocumento") %>' CommandName="downloadDocumento" >Descargar</asp:LinkButton>
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                                <asp:TemplateField ShowHeader="false">
-                                    <ItemTemplate>
-                                        <asp:LinkButton runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("Id") %>' CommandName="editarUsuario" >Editar</asp:LinkButton>
-                                        <asp:LinkButton runat="server" CssClass="btn btn-danger" CommandArgument='<%# Eval("Id") %>' CommandName="eliminarUsuario" >Eliminar</asp:LinkButton> 
+                     
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("CodDocumento") %>' CommandName="downloadDocumento" ><i class="mdi mdi-star"></i></asp:LinkButton>
+                   
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="editarUsuario" ><i class="mdi mdi-star"></i></asp:LinkButton>
+
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="eliminarUsuario" ><i class="mdi mdi-star"></i></asp:LinkButton> 
+                                    
+                                                                
                                     </ItemTemplate>
                                 </asp:TemplateField>
                             </Columns>
