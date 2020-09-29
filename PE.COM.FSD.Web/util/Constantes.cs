@@ -24,6 +24,7 @@ namespace PE.COM.FSD.Web.util
         }
 
         public const String PaginaInicioLogin = "../pages/login.aspx";
+        public const String PaginaLogin = "/pages/login.aspx";
         public const String codigoPerfilAdministrador = "1";
         public const String codigoPerfilGestor = "2";
         public const String selectValueDefault = "0";
@@ -37,6 +38,7 @@ namespace PE.COM.FSD.Web.util
         public const String MensajeComboReporte = "- Todos -";
 
         public const String textoSubject = "Creación de usuario del modulo de CONTRALAFT";
+        public const String textoSubjectInvitacionPropuesta = "Invitación para la presentación de propuestas - FSD";
         public const String estadoPlanBORRADOR = "Borrador";
         public const String estadoPlanPUBLICADO = "Publicado";
 

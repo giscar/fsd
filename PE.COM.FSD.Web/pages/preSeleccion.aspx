@@ -148,6 +148,7 @@
                                 <asp:BoundField ItemStyle-Width="50%" DataField="Entidad" HeaderText="Entidad" />
                                 <asp:BoundField ItemStyle-Width="20%" DataField="Nombres" HeaderText="Nombres" />
                                 <asp:BoundField ItemStyle-Width="20%" DataField="Apellidos" HeaderText="Apellidos" />
+                                <asp:BoundField ItemStyle-Width="20%" DataField="Email" HeaderText="Email" />
                             </Columns>
                         </asp:GridView>
                     </div>

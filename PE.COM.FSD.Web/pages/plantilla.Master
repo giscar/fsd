@@ -60,7 +60,7 @@
     <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
       <div class="container d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top">
-          <a class="navbar-brand brand-logo" href="index.html"><img src="/images/fsd.png" width="150px" /></a>
+          <a href="index.html" style="padding-top: 10px"><img src="/images/fsd.png" width="150" height="60" /></a>
           <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/images/fsd.png" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
