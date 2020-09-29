@@ -159,6 +159,7 @@ namespace PE.COM.FSD.Web.pages
                     new UsuarioBusinessLogic().GuardarPersona(_usuario);
                     EnviarEmail(_usuario);
                 }
+                Response.Redirect("confirmaInvitacion.aspx", true);
             }
             catch (Exception ex)
             {

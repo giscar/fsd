@@ -1157,6 +1157,7 @@
     <Content Include="pages\preSeleccion.aspx" />
     <Content Include="pages\parametro.aspx" />
     <Content Include="images\fsd.png" />
+    <Content Include="pages\confirmaInvitacion.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="comun\PaginaBase.cs">
@@ -1257,6 +1258,12 @@
     </Compile>
     <Compile Include="util\Comunicacion.cs" />
     <Compile Include="util\Correo.cs" />
+    <Compile Include="pages\confirmaInvitacion.aspx.cs">
+      <DependentUpon>confirmaInvitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\confirmaInvitacion.aspx.designer.cs">
+      <DependentUpon>confirmaInvitacion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
