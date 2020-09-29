@@ -26,7 +26,7 @@
                      
                                                 <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-secondary" CommandArgument='<%# Eval("CodDocumento") %>' CommandName="downloadDocumento" ><i class="mdi mdi-cloud-download"></i></asp:LinkButton>
                    
-                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="editarUsuario" ><i class="mdi mdi-plus-circle"></i></asp:LinkButton>
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="editarUsuario" ><i class="mdi mdi-pencil"></i></asp:LinkButton>
 
                                                 <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-danger" CommandArgument='<%# Eval("Id") %>' CommandName="eliminarUsuario" ><i class="mdi mdi-delete"></i></asp:LinkButton> 
                                     

@@ -44,8 +44,8 @@
             </asp:TemplateField>
             <asp:TemplateField ShowHeader="false">
                 <ItemTemplate>
-                    <asp:LinkButton runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="editarRol" >Editar</asp:LinkButton>
-                    <asp:LinkButton runat="server" CssClass="btn btn-danger" CommandArgument='<%# Eval("IdTipo") %>' CommandName="eliminarRol" >Eliminar</asp:LinkButton> 
+                    <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("IdTipo") %>' CommandName="editarRol" ><i class="mdi mdi-pencil"></i></asp:LinkButton>
+                    <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-danger" CommandArgument='<%# Eval("IdTipo") %>' CommandName="eliminarRol" ><i class="mdi mdi-delete"></i></asp:LinkButton> 
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>

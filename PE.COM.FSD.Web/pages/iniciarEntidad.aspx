@@ -325,15 +325,15 @@
                                         <asp:BoundField ItemStyle-Width="10%" DataField="Distrito" HeaderText="Distrito" />
                                         <asp:TemplateField ShowHeader="false" ItemStyle-Width="10%">
                                             <ItemTemplate>
-                                                <asp:LinkButton ID="linkbtnEditar" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_editar">Editar</asp:LinkButton>
+                                                <asp:LinkButton ID="linkbtnEditar" runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_editar"><i class="mdi mdi-pencil"></i></asp:LinkButton>
                                             </ItemTemplate>
                                         </asp:TemplateField>
 
-                                        <asp:TemplateField ShowHeader="false" ItemStyle-Width="10%">
+                                        <asp:TemplateField ShowHeader="false" ItemStyle-Width="10%">   
                                             <ItemTemplate>
-                                                <asp:LinkButton ID="linkbtnContactos" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_contactos">Contactos</asp:LinkButton>
-                                                 <br /><br /><asp:LinkButton ID="linkbtnDeudas" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_deudas">Deudas</asp:LinkButton>
-                                                 <br /><br /><asp:LinkButton ID="linkbtnOficinas" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_oficinas">Oficinas</asp:LinkButton>
+                                                <asp:LinkButton ID="linkbtnContactos" runat="server" CssClass="btn btn-icons btn-inverse-warning" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_contactos"><i class="mdi mdi-account"></i></asp:LinkButton>
+                                                 <br /><br /><asp:LinkButton ID="linkbtnDeudas" runat="server" CssClass="btn btn-icons btn-inverse-warning" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_deudas"><i class="mdi mdi-gavel"></i></asp:LinkButton>
+                                                 <br /><br /><asp:LinkButton ID="linkbtnOficinas" runat="server" CssClass="btn btn-icons btn-inverse-warning" CommandArgument='<%# Eval("IdTipo") %>' CommandName="btn_oficinas"><i class="mdi mdi-map-marker-radius"></i></asp:LinkButton>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                     </Columns>

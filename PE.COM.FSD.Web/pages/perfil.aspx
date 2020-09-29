@@ -30,8 +30,8 @@
             <asp:BoundField ItemStyle-Width="40%" DataField="DetDetalle" HeaderText="Detalle del Perfil" />
             <asp:TemplateField ShowHeader="false">
                 <ItemTemplate>
-                    <asp:LinkButton runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("IdTipo") %>' CommandName="editarPerfil" >Editar</asp:LinkButton>
-                    <asp:LinkButton runat="server" CssClass="btn btn-danger" CommandArgument='<%# Eval("IdTipo") %>' CommandName="eliminarPerfil" >Eliminar</asp:LinkButton>    
+                    <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("IdTipo") %>' CommandName="editarPerfil" ><i class="mdi mdi-pencil"></i></asp:LinkButton>
+                    <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-danger" CommandArgument='<%# Eval("IdTipo") %>' CommandName="eliminarPerfil" ><i class="mdi mdi-delete"></i></asp:LinkButton>    
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>

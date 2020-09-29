@@ -48,8 +48,7 @@
             <asp:BoundField ItemStyle-Width="50%" DataField="Estado" HeaderText="Estado" />
             <asp:TemplateField HeaderText="Acciones">
                 <ItemTemplate>
-                    <asp:LinkButton ID="Button" Text="Editar" CssClass="btn btn-success" runat="server" CommandName="Editar"
-                                    OnCommand="GridView1_Command" CommandArgument='<%# Eval("IdParametroValor") %>' />
+                    <asp:LinkButton ID="Button" CssClass="btn btn-icons btn-inverse-primary" runat="server" CommandName="Editar" OnCommand="GridView1_Command" CommandArgument='<%# Eval("IdParametroValor") %>' ><i class="mdi mdi-pencil"></i></asp:LinkButton>
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
