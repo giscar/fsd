@@ -19,6 +19,8 @@ namespace PE.COM.FSD.Web.pages {
 		
 		protected System.Web.UI.WebControls.Button btnNuevoUsuario;
 		
+		protected System.Web.UI.WebControls.GridView GridView1;
+		
 		protected System.Web.UI.HtmlControls.HtmlInputText txtDocumento;
 		
 		protected System.Web.UI.WebControls.DropDownList ddlCodigoPerfil;
@@ -58,7 +60,5 @@ namespace PE.COM.FSD.Web.pages {
 		protected System.Web.UI.WebControls.Button Button2;
 		
 		protected System.Web.UI.WebControls.Button btnInactive;
-		
-		protected System.Web.UI.WebControls.GridView GridView1;
 	}
 }

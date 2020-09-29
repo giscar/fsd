@@ -12,6 +12,30 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entidadModal">Crear entidad</button>
         </div>
     </div>
+    <div  class="row">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="true" class="table table-striped table-bordered" PageSize="20" AutoGenerateColumns="false" OnRowCommand="GridUsuario_RowCommand">
+                            <Columns>
+                                
+                                <asp:BoundField   DataField="DetCodigo" HeaderText="Usuario" />
+                                <asp:BoundField  DataField="DetNombre" HeaderText="Nombre completo" />
+                                <asp:BoundField  DataField="RazonSocialEntidad" HeaderText="Entidad" />
+                                <asp:BoundField  DataField="NombrePerfil" HeaderText="Perfil" />
+                                
+                                <asp:TemplateField HeaderText="Acciones">
+                                    <ItemTemplate>
+                     
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-secondary" CommandArgument='<%# Eval("CodDocumento") %>' CommandName="downloadDocumento" ><i class="mdi mdi-cloud-download"></i></asp:LinkButton>
+                   
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="editarUsuario" ><i class="mdi mdi-plus-circle"></i></asp:LinkButton>
+
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-danger" CommandArgument='<%# Eval("Id") %>' CommandName="eliminarUsuario" ><i class="mdi mdi-delete"></i></asp:LinkButton> 
+                                    
+                                                                
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                        </asp:GridView>
+    </div>
     <div class="fluid-container">
         <div class="row ticket-card mt-3 pb-2 border-bottom pb-3 mb-3">
             <div class="ticket-details col-md-9">
@@ -179,28 +203,7 @@
                             </div>
                         </div>
                         <br />
-                        <asp:GridView ID="GridView1" runat="server" AllowPaging="true" class="table table-striped table-bordered" PageSize="20" AutoGenerateColumns="false" OnRowCommand="GridUsuario_RowCommand">
-                            <Columns>
-                                
-                                <asp:BoundField Class="algo" ItemStyle-Width="30%"  DataField="DetCodigo" HeaderText="Usuario" />
-                                <asp:BoundField ItemStyle-Width="30%" DataField="DetNombre" HeaderText="Nombre completo" />
-                                <asp:BoundField ItemStyle-Width="30%" DataField="RazonSocialEntidad" HeaderText="Entidad" />
-                                <asp:BoundField ItemStyle-Width="30%" DataField="NombrePerfil" HeaderText="Perfil" />
-                                
-                                <asp:TemplateField HeaderText="Acciones">
-                                    <ItemTemplate>
-                     
-                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("CodDocumento") %>' CommandName="downloadDocumento" ><i class="mdi mdi-star"></i></asp:LinkButton>
-                   
-                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="editarUsuario" ><i class="mdi mdi-star"></i></asp:LinkButton>
-
-                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="eliminarUsuario" ><i class="mdi mdi-star"></i></asp:LinkButton> 
-                                    
-                                                                
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                            </Columns>
-                        </asp:GridView>
+                        
                     </div>                    
                 </div>
             </div>
