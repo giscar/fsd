@@ -1,13 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{5992A5C6-F72E-4EF3-8BAE-A599DB5A6740}|">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="PE.COM.FSD.Web/pages/usuario.aspx" Line="29" Column="214" />
-      <File FileName="PE.COM.FSD.Web/pages/rol.aspx" Line="47" Column="96" />
-      <File FileName="PE.COM.FSD.Web/pages/perfil.aspx" Line="33" Column="195" />
-      <File FileName="PE.COM.FSD.Web/pages/plantilla.Master" Line="225" Column="93" />
-      <File FileName="PE.COM.FSD.Web/pages/parametro.aspx" Line="51" Column="235" />
-      <File FileName="PE.COM.FSD.Web/pages/preSeleccion.aspx" Line="153" Column="34" />
-      <File FileName="PE.COM.FSD.Web/pages/iniciarEntidad.aspx" Line="336" Column="261" />
+      <File FileName="PE.COM.FSD.Web/pages/usuario.aspx" Line="31" Column="221" />
+      <File FileName="PE.COM.FSD.Web/pages/rol.aspx" Line="47" Column="192" />
+      <File FileName="PE.COM.FSD.Web/pages/perfil.aspx" Line="34" Column="95" />
+      <File FileName="PE.COM.FSD.Web/pages/oficinasEntidad.aspx" Line="117" Column="244" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +17,7 @@
               <Node name="css" expanded="True" />
               <Node name="images" expanded="True" />
               <Node name="pages" expanded="True">
-                <Node name="iniciarEntidad.aspx" selected="True" />
+                <Node name="oficinasEntidad.aspx" selected="True" />
               </Node>
               <Node name="recursos" expanded="True">
                 <Node name="core" expanded="True" />

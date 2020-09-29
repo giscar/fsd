@@ -113,8 +113,8 @@
                                         <asp:BoundField ItemStyle-Width="10%" DataField="Distrito" HeaderText="Distrito" />
                                         <asp:TemplateField ShowHeader="false" ItemStyle-Width="30%">
                                             <ItemTemplate>
-                                                <asp:LinkButton runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("Id") %>' CommandName="editarOficina">Editar</asp:LinkButton>
-                                                <asp:LinkButton runat="server" CssClass="btn btn-danger" CommandArgument='<%# Eval("Id")  + ";" + Eval("IdTipo") %>' CommandName="eliminarOficina">Eliminar</asp:LinkButton>
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-primary" CommandArgument='<%# Eval("Id") %>' CommandName="editarOficina"><i class="mdi mdi-pencil"></i></asp:LinkButton>
+                                                <asp:LinkButton runat="server" CssClass="btn btn-icons btn-inverse-danger" CommandArgument='<%# Eval("Id")  + ";" + Eval("IdTipo") %>' CommandName="eliminarOficina"><i class="mdi mdi-delete"></i></asp:LinkButton>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                     </Columns>
