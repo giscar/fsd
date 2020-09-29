@@ -25,6 +25,8 @@ namespace PE.COM.FSD.Web.pages
         int nEntidad = 0;
         readonly Logger Log = LogManager.GetCurrentClassLogger();
 
+        int oficinaseleccionada;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(Request.QueryString["id"]) == true)
@@ -138,6 +140,26 @@ namespace PE.COM.FSD.Web.pages
 
         }
 
+        protected void GridViewOficinas_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.Header)
+            {
+                e.Row.Cells[0].Visible = false;
+            }
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                e.Row.Cells[0].Visible = false;
+            }
+        }
+
+        protected void GridViewOficinas_SelectedIndexChanging(Object sender, GridViewSelectEventArgs e)
+        {
+            //GridViewRow row = GridViewOficinas.SelectedRow;
+            //oficinaseleccionada = int.Parse(row.Cells[2].Text);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert(1);", true);
+
+        }
+
         protected void gridOficinas_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             ViewState["parametro"] = e.CommandArgument.ToString();
@@ -217,6 +239,25 @@ namespace PE.COM.FSD.Web.pages
                 Log.Error(ex);
             }
         }
+
+        protected void Modal_mapa(object sender, EventArgs e)
+        {
+            try
+            {
+                Limpiar();
+                //divEntidad.Visible = false;
+                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                sb.Append(@"<script type='text/javascript'>");
+                sb.Append("$(document).ready(function() {$('#mapa').modal('show');});");
+                sb.Append(@"</script>");
+                System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "mapa", sb.ToString(), false);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex);
+            }
+        }
+
         protected void Modal_nueva_oficina(object sender, EventArgs e)
         {
             try
